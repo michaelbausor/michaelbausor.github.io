@@ -1,0 +1,2641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>google\logging\type\HttpRequest | GAX PHP</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:google_logging_type_HttpRequest" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">GAX PHP</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../google.html">google</a></li>
+                                        <li><a href="../../../google/logging.html">logging</a></li>
+                                        <li><a href="../../../google/logging/type.html">type</a></li>
+    
+                <li>HttpRequest</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            HttpRequest
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>HttpRequest</strong>        extends <abbr title="DrSlump\Protobuf\Message">Message</abbr>
+</p>
+
+        
+    
+
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_request_method">
+                                                                                string
+                </td>
+                <td>$request_method</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_request_url">
+                                                                                string
+                </td>
+                <td>$request_url</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_request_size">
+                                                                                int
+                </td>
+                <td>$request_size</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_status">
+                                                                                int
+                </td>
+                <td>$status</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_response_size">
+                                                                                int
+                </td>
+                <td>$response_size</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_user_agent">
+                                                                                string
+                </td>
+                <td>$user_agent</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_remote_ip">
+                                                                                string
+                </td>
+                <td>$remote_ip</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_server_ip">
+                                                                                string
+                </td>
+                <td>$server_ip</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_referer">
+                                                                                string
+                </td>
+                <td>$referer</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_latency">
+                                                                                <a href="../../../google/protobuf/Duration.html"><abbr title="google\protobuf\Duration">Duration</abbr></a>
+                </td>
+                <td>$latency</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_cache_lookup">
+                                                                                boolean
+                </td>
+                <td>$cache_lookup</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_cache_hit">
+                                                                                boolean
+                </td>
+                <td>$cache_hit</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_cache_validated_with_origin_server">
+                                                                                boolean
+                </td>
+                <td>$cache_validated_with_origin_server</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_cache_fill_bytes">
+                                                                                int
+                </td>
+                <td>$cache_fill_bytes</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_descriptor">descriptor</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasRequestMethod">hasRequestMethod</a>()
+        
+                                            <p>Check if <request_method> has a value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearRequestMethod">clearRequestMethod</a>()
+        
+                                            <p>Clear <request_method> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRequestMethod">getRequestMethod</a>()
+        
+                                            <p>Get <request_method> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRequestMethod">setRequestMethod</a>(string $value)
+        
+                                            <p>Set <request_method> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasRequestUrl">hasRequestUrl</a>()
+        
+                                            <p>Check if <request_url> has a value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearRequestUrl">clearRequestUrl</a>()
+        
+                                            <p>Clear <request_url> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRequestUrl">getRequestUrl</a>()
+        
+                                            <p>Get <request_url> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRequestUrl">setRequestUrl</a>(string $value)
+        
+                                            <p>Set <request_url> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasRequestSize">hasRequestSize</a>()
+        
+                                            <p>Check if <request_size> has a value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearRequestSize">clearRequestSize</a>()
+        
+                                            <p>Clear <request_size> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRequestSize">getRequestSize</a>()
+        
+                                            <p>Get <request_size> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRequestSize">setRequestSize</a>(int $value)
+        
+                                            <p>Set <request_size> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasStatus">hasStatus</a>()
+        
+                                            <p>Check if <status> has a value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearStatus">clearStatus</a>()
+        
+                                            <p>Clear <status> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getStatus">getStatus</a>()
+        
+                                            <p>Get <status> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setStatus">setStatus</a>(int $value)
+        
+                                            <p>Set <status> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasResponseSize">hasResponseSize</a>()
+        
+                                            <p>Check if <response_size> has a value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearResponseSize">clearResponseSize</a>()
+        
+                                            <p>Clear <response_size> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getResponseSize">getResponseSize</a>()
+        
+                                            <p>Get <response_size> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setResponseSize">setResponseSize</a>(int $value)
+        
+                                            <p>Set <response_size> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasUserAgent">hasUserAgent</a>()
+        
+                                            <p>Check if <user_agent> has a value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearUserAgent">clearUserAgent</a>()
+        
+                                            <p>Clear <user_agent> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUserAgent">getUserAgent</a>()
+        
+                                            <p>Get <user_agent> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setUserAgent">setUserAgent</a>(string $value)
+        
+                                            <p>Set <user_agent> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasRemoteIp">hasRemoteIp</a>()
+        
+                                            <p>Check if <remote_ip> has a value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearRemoteIp">clearRemoteIp</a>()
+        
+                                            <p>Clear <remote_ip> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRemoteIp">getRemoteIp</a>()
+        
+                                            <p>Get <remote_ip> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRemoteIp">setRemoteIp</a>(string $value)
+        
+                                            <p>Set <remote_ip> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasServerIp">hasServerIp</a>()
+        
+                                            <p>Check if <server_ip> has a value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearServerIp">clearServerIp</a>()
+        
+                                            <p>Clear <server_ip> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getServerIp">getServerIp</a>()
+        
+                                            <p>Get <server_ip> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setServerIp">setServerIp</a>(string $value)
+        
+                                            <p>Set <server_ip> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasReferer">hasReferer</a>()
+        
+                                            <p>Check if <referer> has a value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearReferer">clearReferer</a>()
+        
+                                            <p>Clear <referer> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getReferer">getReferer</a>()
+        
+                                            <p>Get <referer> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setReferer">setReferer</a>(string $value)
+        
+                                            <p>Set <referer> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasLatency">hasLatency</a>()
+        
+                                            <p>Check if <latency> has a value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearLatency">clearLatency</a>()
+        
+                                            <p>Clear <latency> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/protobuf/Duration.html"><abbr title="google\protobuf\Duration">Duration</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLatency">getLatency</a>()
+        
+                                            <p>Get <latency> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setLatency">setLatency</a>(<a href="../../../google/protobuf/Duration.html"><abbr title="google\protobuf\Duration">Duration</abbr></a> $value)
+        
+                                            <p>Set <latency> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasCacheLookup">hasCacheLookup</a>()
+        
+                                            <p>Check if <cache_lookup> has a value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearCacheLookup">clearCacheLookup</a>()
+        
+                                            <p>Clear <cache_lookup> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCacheLookup">getCacheLookup</a>()
+        
+                                            <p>Get <cache_lookup> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setCacheLookup">setCacheLookup</a>(boolean $value)
+        
+                                            <p>Set <cache_lookup> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasCacheHit">hasCacheHit</a>()
+        
+                                            <p>Check if <cache_hit> has a value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearCacheHit">clearCacheHit</a>()
+        
+                                            <p>Clear <cache_hit> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCacheHit">getCacheHit</a>()
+        
+                                            <p>Get <cache_hit> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setCacheHit">setCacheHit</a>(boolean $value)
+        
+                                            <p>Set <cache_hit> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasCacheValidatedWithOriginServer">hasCacheValidatedWithOriginServer</a>()
+        
+                                            <p>Check if <cache_validated_with_origin_server> has a value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearCacheValidatedWithOriginServer">clearCacheValidatedWithOriginServer</a>()
+        
+                                            <p>Clear <cache_validated_with_origin_server> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCacheValidatedWithOriginServer">getCacheValidatedWithOriginServer</a>()
+        
+                                            <p>Get <cache_validated_with_origin_server> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setCacheValidatedWithOriginServer">setCacheValidatedWithOriginServer</a>(boolean $value)
+        
+                                            <p>Set <cache_validated_with_origin_server> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasCacheFillBytes">hasCacheFillBytes</a>()
+        
+                                            <p>Check if <cache_fill_bytes> has a value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearCacheFillBytes">clearCacheFillBytes</a>()
+        
+                                            <p>Clear <cache_fill_bytes> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCacheFillBytes">getCacheFillBytes</a>()
+        
+                                            <p>Get <cache_fill_bytes> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setCacheFillBytes">setCacheFillBytes</a>(int $value)
+        
+                                            <p>Set <cache_fill_bytes> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_descriptor">
+        <div class="location">at line         line 56</div>
+        <code>        static            
+    <strong>descriptor</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasRequestMethod">
+        <div class="location">at line         line 185</div>
+        <code>                    boolean
+    <strong>hasRequestMethod</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if <request_method> has a value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearRequestMethod">
+        <div class="location">at line         line 194</div>
+        <code>                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+    <strong>clearRequestMethod</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear <request_method> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRequestMethod">
+        <div class="location">at line         line 203</div>
+        <code>                    string
+    <strong>getRequestMethod</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get <request_method> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRequestMethod">
+        <div class="location">at line         line 213</div>
+        <code>                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+    <strong>setRequestMethod</strong>(string $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set <request_method> value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasRequestUrl">
+        <div class="location">at line         line 222</div>
+        <code>                    boolean
+    <strong>hasRequestUrl</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if <request_url> has a value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearRequestUrl">
+        <div class="location">at line         line 231</div>
+        <code>                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+    <strong>clearRequestUrl</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear <request_url> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRequestUrl">
+        <div class="location">at line         line 240</div>
+        <code>                    string
+    <strong>getRequestUrl</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get <request_url> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRequestUrl">
+        <div class="location">at line         line 250</div>
+        <code>                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+    <strong>setRequestUrl</strong>(string $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set <request_url> value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasRequestSize">
+        <div class="location">at line         line 259</div>
+        <code>                    boolean
+    <strong>hasRequestSize</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if <request_size> has a value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearRequestSize">
+        <div class="location">at line         line 268</div>
+        <code>                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+    <strong>clearRequestSize</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear <request_size> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRequestSize">
+        <div class="location">at line         line 277</div>
+        <code>                    int
+    <strong>getRequestSize</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get <request_size> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRequestSize">
+        <div class="location">at line         line 287</div>
+        <code>                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+    <strong>setRequestSize</strong>(int $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set <request_size> value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasStatus">
+        <div class="location">at line         line 296</div>
+        <code>                    boolean
+    <strong>hasStatus</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if <status> has a value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearStatus">
+        <div class="location">at line         line 305</div>
+        <code>                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+    <strong>clearStatus</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear <status> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getStatus">
+        <div class="location">at line         line 314</div>
+        <code>                    int
+    <strong>getStatus</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get <status> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setStatus">
+        <div class="location">at line         line 324</div>
+        <code>                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+    <strong>setStatus</strong>(int $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set <status> value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasResponseSize">
+        <div class="location">at line         line 333</div>
+        <code>                    boolean
+    <strong>hasResponseSize</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if <response_size> has a value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearResponseSize">
+        <div class="location">at line         line 342</div>
+        <code>                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+    <strong>clearResponseSize</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear <response_size> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getResponseSize">
+        <div class="location">at line         line 351</div>
+        <code>                    int
+    <strong>getResponseSize</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get <response_size> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setResponseSize">
+        <div class="location">at line         line 361</div>
+        <code>                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+    <strong>setResponseSize</strong>(int $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set <response_size> value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasUserAgent">
+        <div class="location">at line         line 370</div>
+        <code>                    boolean
+    <strong>hasUserAgent</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if <user_agent> has a value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearUserAgent">
+        <div class="location">at line         line 379</div>
+        <code>                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+    <strong>clearUserAgent</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear <user_agent> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUserAgent">
+        <div class="location">at line         line 388</div>
+        <code>                    string
+    <strong>getUserAgent</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get <user_agent> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setUserAgent">
+        <div class="location">at line         line 398</div>
+        <code>                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+    <strong>setUserAgent</strong>(string $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set <user_agent> value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasRemoteIp">
+        <div class="location">at line         line 407</div>
+        <code>                    boolean
+    <strong>hasRemoteIp</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if <remote_ip> has a value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearRemoteIp">
+        <div class="location">at line         line 416</div>
+        <code>                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+    <strong>clearRemoteIp</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear <remote_ip> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRemoteIp">
+        <div class="location">at line         line 425</div>
+        <code>                    string
+    <strong>getRemoteIp</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get <remote_ip> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRemoteIp">
+        <div class="location">at line         line 435</div>
+        <code>                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+    <strong>setRemoteIp</strong>(string $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set <remote_ip> value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasServerIp">
+        <div class="location">at line         line 444</div>
+        <code>                    boolean
+    <strong>hasServerIp</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if <server_ip> has a value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearServerIp">
+        <div class="location">at line         line 453</div>
+        <code>                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+    <strong>clearServerIp</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear <server_ip> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getServerIp">
+        <div class="location">at line         line 462</div>
+        <code>                    string
+    <strong>getServerIp</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get <server_ip> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setServerIp">
+        <div class="location">at line         line 472</div>
+        <code>                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+    <strong>setServerIp</strong>(string $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set <server_ip> value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasReferer">
+        <div class="location">at line         line 481</div>
+        <code>                    boolean
+    <strong>hasReferer</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if <referer> has a value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearReferer">
+        <div class="location">at line         line 490</div>
+        <code>                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+    <strong>clearReferer</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear <referer> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getReferer">
+        <div class="location">at line         line 499</div>
+        <code>                    string
+    <strong>getReferer</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get <referer> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setReferer">
+        <div class="location">at line         line 509</div>
+        <code>                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+    <strong>setReferer</strong>(string $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set <referer> value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasLatency">
+        <div class="location">at line         line 518</div>
+        <code>                    boolean
+    <strong>hasLatency</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if <latency> has a value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearLatency">
+        <div class="location">at line         line 527</div>
+        <code>                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+    <strong>clearLatency</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear <latency> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLatency">
+        <div class="location">at line         line 536</div>
+        <code>                    <a href="../../../google/protobuf/Duration.html"><abbr title="google\protobuf\Duration">Duration</abbr></a>
+    <strong>getLatency</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get <latency> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/protobuf/Duration.html"><abbr title="google\protobuf\Duration">Duration</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLatency">
+        <div class="location">at line         line 546</div>
+        <code>                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+    <strong>setLatency</strong>(<a href="../../../google/protobuf/Duration.html"><abbr title="google\protobuf\Duration">Duration</abbr></a> $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set <latency> value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../google/protobuf/Duration.html"><abbr title="google\protobuf\Duration">Duration</abbr></a></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasCacheLookup">
+        <div class="location">at line         line 555</div>
+        <code>                    boolean
+    <strong>hasCacheLookup</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if <cache_lookup> has a value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearCacheLookup">
+        <div class="location">at line         line 564</div>
+        <code>                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+    <strong>clearCacheLookup</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear <cache_lookup> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCacheLookup">
+        <div class="location">at line         line 573</div>
+        <code>                    boolean
+    <strong>getCacheLookup</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get <cache_lookup> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCacheLookup">
+        <div class="location">at line         line 583</div>
+        <code>                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+    <strong>setCacheLookup</strong>(boolean $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set <cache_lookup> value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>boolean</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasCacheHit">
+        <div class="location">at line         line 592</div>
+        <code>                    boolean
+    <strong>hasCacheHit</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if <cache_hit> has a value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearCacheHit">
+        <div class="location">at line         line 601</div>
+        <code>                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+    <strong>clearCacheHit</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear <cache_hit> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCacheHit">
+        <div class="location">at line         line 610</div>
+        <code>                    boolean
+    <strong>getCacheHit</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get <cache_hit> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCacheHit">
+        <div class="location">at line         line 620</div>
+        <code>                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+    <strong>setCacheHit</strong>(boolean $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set <cache_hit> value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>boolean</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasCacheValidatedWithOriginServer">
+        <div class="location">at line         line 629</div>
+        <code>                    boolean
+    <strong>hasCacheValidatedWithOriginServer</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if <cache_validated_with_origin_server> has a value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearCacheValidatedWithOriginServer">
+        <div class="location">at line         line 638</div>
+        <code>                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+    <strong>clearCacheValidatedWithOriginServer</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear <cache_validated_with_origin_server> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCacheValidatedWithOriginServer">
+        <div class="location">at line         line 647</div>
+        <code>                    boolean
+    <strong>getCacheValidatedWithOriginServer</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get <cache_validated_with_origin_server> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCacheValidatedWithOriginServer">
+        <div class="location">at line         line 657</div>
+        <code>                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+    <strong>setCacheValidatedWithOriginServer</strong>(boolean $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set <cache_validated_with_origin_server> value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>boolean</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasCacheFillBytes">
+        <div class="location">at line         line 666</div>
+        <code>                    boolean
+    <strong>hasCacheFillBytes</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if <cache_fill_bytes> has a value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearCacheFillBytes">
+        <div class="location">at line         line 675</div>
+        <code>                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+    <strong>clearCacheFillBytes</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear <cache_fill_bytes> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCacheFillBytes">
+        <div class="location">at line         line 684</div>
+        <code>                    int
+    <strong>getCacheFillBytes</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get <cache_fill_bytes> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCacheFillBytes">
+        <div class="location">at line         line 694</div>
+        <code>                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+    <strong>setCacheFillBytes</strong>(int $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set <cache_fill_bytes> value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

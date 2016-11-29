@@ -1,0 +1,1717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Google\Cloud\PubSub\V1\SubscriberClient | GAX PHP</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Google_Cloud_PubSub_V1_SubscriberClient" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">GAX PHP</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../../Google.html">Google</a></li>
+                                        <li><a href="../../../../Google/Cloud.html">Cloud</a></li>
+                                        <li><a href="../../../../Google/Cloud/PubSub.html">PubSub</a></li>
+                                        <li><a href="../../../../Google/Cloud/PubSub/V1.html">V1</a></li>
+    
+                <li>SubscriberClient</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            SubscriberClient
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>SubscriberClient</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Service Description: The service that an application uses to manipulate subscriptions and to
+consume messages from a subscription via the <code>Pull</code> method.</p>            <p>This class provides the ability to make remote calls to the backing service through method
+calls that map to API methods. Sample code to get started:</p>
+
+<p><pre><code>
+try {
+    $subscriberClient = new SubscriberClient();
+    $formattedName = SubscriberClient::formatSubscriptionName("[PROJECT]", "[SUBSCRIPTION]");
+    $formattedTopic = SubscriberClient::formatTopicName("[PROJECT]", "[TOPIC]");
+    $response = $subscriberClient->createSubscription($formattedName, $formattedTopic);
+} finally {
+    if (isset($subscriberClient)) {
+        $subscriberClient->close();
+    }
+}
+</pre></code></p>
+
+<p>Many parameters require resource names to be formatted in a particular way. To assist
+with these names, this class includes a format method for each type of name, and additionally
+a parse method to extract the individual identifiers contained within names that are
+returned.</p>        </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>SERVICE_ADDRESS</td>
+                <td class="last">
+                    <p><em>The default address of the service.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>DEFAULT_SERVICE_PORT</td>
+                <td class="last">
+                    <p><em>The default port of the service.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>DEFAULT_TIMEOUT_MILLIS</td>
+                <td class="last">
+                    <p><em>The default timeout for non-retrying methods.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>_GAX_VERSION</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>_CODEGEN_NAME</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>_CODEGEN_VERSION</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_formatProjectName">formatProjectName</a>($project)
+        
+                                            <p>Formats a string containing the fully-qualified path to represent
+a project resource.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_formatSubscriptionName">formatSubscriptionName</a>($project, $subscription)
+        
+                                            <p>Formats a string containing the fully-qualified path to represent
+a subscription resource.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_formatTopicName">formatTopicName</a>($project, $topic)
+        
+                                            <p>Formats a string containing the fully-qualified path to represent
+a topic resource.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseProjectFromProjectName">parseProjectFromProjectName</a>($projectName)
+        
+                                            <p>Parses the project from the given fully-qualified path which
+represents a project resource.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseProjectFromSubscriptionName">parseProjectFromSubscriptionName</a>($subscriptionName)
+        
+                                            <p>Parses the project from the given fully-qualified path which
+represents a subscription resource.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseSubscriptionFromSubscriptionName">parseSubscriptionFromSubscriptionName</a>($subscriptionName)
+        
+                                            <p>Parses the subscription from the given fully-qualified path which
+represents a subscription resource.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseProjectFromTopicName">parseProjectFromTopicName</a>($topicName)
+        
+                                            <p>Parses the project from the given fully-qualified path which
+represents a topic resource.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseTopicFromTopicName">parseTopicFromTopicName</a>($topicName)
+        
+                                            <p>Parses the topic from the given fully-qualified path which
+represents a topic resource.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(array $options = array())
+        
+                                            <p>Constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../google/pubsub/v1/Subscription.html"><abbr title="google\pubsub\v1\Subscription">Subscription</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createSubscription">createSubscription</a>(string $name, string $topic, array $optionalArgs = array())
+        
+                                            <p>Creates a subscription to a given topic.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../google/pubsub/v1/Subscription.html"><abbr title="google\pubsub\v1\Subscription">Subscription</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSubscription">getSubscription</a>(string $subscription, array $optionalArgs = array())
+        
+                                            <p>Gets the configuration details of a subscription.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../Google/GAX/PagedListResponse.html"><abbr title="Google\GAX\PagedListResponse">PagedListResponse</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_listSubscriptions">listSubscriptions</a>(string $project, array $optionalArgs = array())
+        
+                                            <p>Lists matching subscriptions.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_deleteSubscription">deleteSubscription</a>(string $subscription, array $optionalArgs = array())
+        
+                                            <p>Deletes an existing subscription. All pending messages in the subscription
+are immediately dropped. Calls to <code>Pull</code> after deletion will return
+<code>NOT_FOUND</code>. After a subscription is deleted, a new one may be created with
+the same name, but the new one has no association with the old
+subscription, or its topic unless the same topic is specified.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_modifyAckDeadline">modifyAckDeadline</a>(string $subscription, string[] $ackIds, int $ackDeadlineSeconds, array $optionalArgs = array())
+        
+                                            <p>Modifies the ack deadline for a specific message. This method is useful
+to indicate that more time is needed to process a message by the
+subscriber, or to make the message available for redelivery if the
+processing was interrupted. Note that this does not modify the
+subscription-level <code>ackDeadlineSeconds</code> used for subsequent messages.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_acknowledge">acknowledge</a>(string $subscription, string[] $ackIds, array $optionalArgs = array())
+        
+                                            <p>Acknowledges the messages associated with the <code>ack_ids</code> in the
+<code>AcknowledgeRequest</code>. The Pub/Sub system can remove the relevant messages
+from the subscription.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../google/pubsub/v1/PullResponse.html"><abbr title="google\pubsub\v1\PullResponse">PullResponse</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_pull">pull</a>(string $subscription, int $maxMessages, array $optionalArgs = array())
+        
+                                            <p>Pulls messages from the server. Returns an empty list if there are no
+messages available in the backlog. The server may return <code>UNAVAILABLE</code> if
+there are too many concurrent pull requests pending for the given
+subscription.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_modifyPushConfig">modifyPushConfig</a>(string $subscription, <a href="../../../../google/pubsub/v1/PushConfig.html"><abbr title="google\pubsub\v1\PushConfig">PushConfig</abbr></a> $pushConfig, array $optionalArgs = array())
+        
+                                            <p>Modifies the <code>PushConfig</code> for a specified subscription.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../google/iam/v1/Policy.html"><abbr title="google\iam\v1\Policy">Policy</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setIamPolicy">setIamPolicy</a>(string $resource, <a href="../../../../google/iam/v1/Policy.html"><abbr title="google\iam\v1\Policy">Policy</abbr></a> $policy, array $optionalArgs = array())
+        
+                                            <p>Sets the access control policy on the specified resource. Replaces any
+existing policy.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../google/iam/v1/Policy.html"><abbr title="google\iam\v1\Policy">Policy</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getIamPolicy">getIamPolicy</a>(string $resource, array $optionalArgs = array())
+        
+                                            <p>Gets the access control policy for a resource.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../google/iam/v1/TestIamPermissionsResponse.html"><abbr title="google\iam\v1\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_testIamPermissions">testIamPermissions</a>(string $resource, string[] $permissions, array $optionalArgs = array())
+        
+                                            <p>Returns permissions that a caller has on the specified resource.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_close">close</a>()
+        
+                                            <p>Initiates an orderly shutdown in which preexisting calls continue but new
+calls are immediately cancelled.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_formatProjectName">
+        <div class="location">at line         line 109</div>
+        <code>        static            
+    <strong>formatProjectName</strong>($project)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Formats a string containing the fully-qualified path to represent
+a project resource.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$project</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_formatSubscriptionName">
+        <div class="location">at line         line 120</div>
+        <code>        static            
+    <strong>formatSubscriptionName</strong>($project, $subscription)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Formats a string containing the fully-qualified path to represent
+a subscription resource.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$project</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$subscription</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_formatTopicName">
+        <div class="location">at line         line 132</div>
+        <code>        static            
+    <strong>formatTopicName</strong>($project, $topic)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Formats a string containing the fully-qualified path to represent
+a topic resource.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$project</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$topic</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseProjectFromProjectName">
+        <div class="location">at line         line 144</div>
+        <code>        static            
+    <strong>parseProjectFromProjectName</strong>($projectName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Parses the project from the given fully-qualified path which
+represents a project resource.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$projectName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseProjectFromSubscriptionName">
+        <div class="location">at line         line 153</div>
+        <code>        static            
+    <strong>parseProjectFromSubscriptionName</strong>($subscriptionName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Parses the project from the given fully-qualified path which
+represents a subscription resource.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$subscriptionName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseSubscriptionFromSubscriptionName">
+        <div class="location">at line         line 162</div>
+        <code>        static            
+    <strong>parseSubscriptionFromSubscriptionName</strong>($subscriptionName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Parses the subscription from the given fully-qualified path which
+represents a subscription resource.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$subscriptionName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseProjectFromTopicName">
+        <div class="location">at line         line 171</div>
+        <code>        static            
+    <strong>parseProjectFromTopicName</strong>($topicName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Parses the project from the given fully-qualified path which
+represents a topic resource.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$topicName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseTopicFromTopicName">
+        <div class="location">at line         line 180</div>
+        <code>        static            
+    <strong>parseTopicFromTopicName</strong>($topicName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Parses the topic from the given fully-qualified path which
+represents a topic resource.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$topicName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line         line 262</div>
+        <code>                    
+    <strong>__construct</strong>(array $options = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>{
+                      Optional. Options for configuring the service API wrapper.</p>
+
+<pre><code>@type string $serviceAddress The domain name of the API remote host.
+                             Default 'pubsub.googleapis.com'.
+@type mixed $port The port on which to connect to the remote host. Default 443.
+@type Grpc\ChannelCredentials $sslCreds
+      A `ChannelCredentials` for use with an SSL-enabled channel.
+      Default: a credentials object returned from
+      Grpc\ChannelCredentials::createSsl()
+@type array $scopes A string array of scopes to use when acquiring credentials.
+                    Default the scopes for the Google Cloud Pub/Sub API.
+@type array $retryingOverride
+      An associative array of string =&gt; RetryOptions, where the keys
+      are method names (e.g. 'createFoo'), that overrides default retrying
+      settings. A value of null indicates that the method in question should
+      not retry.
+@type int $timeoutMillis The timeout in milliseconds to use for calls
+                         that don't use retries. For calls that use retries,
+                         set the timeout in RetryOptions.
+                         Default: 30000 (30 seconds)
+@type string $appName The codename of the calling service. Default 'gax'.
+@type string $appVersion The version of the calling service.
+                         Default: the current version of GAX.
+@type Google\Auth\CredentialsLoader $credentialsLoader
+                         A CredentialsLoader object created using the
+                         Google\Auth library.
+</code></pre>
+
+<p>}</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createSubscription">
+        <div class="location">at line         line 418</div>
+        <code>                    <a href="../../../../google/pubsub/v1/Subscription.html"><abbr title="google\pubsub\v1\Subscription">Subscription</abbr></a>
+    <strong>createSubscription</strong>(string $name, string $topic, array $optionalArgs = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a subscription to a given topic.</p>                    <p>If the subscription already exists, returns <code>ALREADY_EXISTS</code>.
+If the corresponding topic doesn't exist, returns <code>NOT_FOUND</code>.</p>
+
+<p>If the name is not provided in the request, the server will assign a random
+name for this subscription on the same project as the topic. Note that
+for REST API requests, you must specify a name.</p>
+
+<p>Sample code:
+<pre><code>
+try {
+    $subscriberClient = new SubscriberClient();
+    $formattedName = SubscriberClient::formatSubscriptionName("[PROJECT]", "[SUBSCRIPTION]");
+    $formattedTopic = SubscriberClient::formatTopicName("[PROJECT]", "[TOPIC]");
+    $response = $subscriberClient->createSubscription($formattedName, $formattedTopic);
+} finally {
+    if (isset($subscriberClient)) {
+        $subscriberClient->close();
+    }
+}
+</pre></code></p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The name of the subscription. It must have the format
+                            <code>"projects/{project}/subscriptions/{subscription}"</code>. <code>{subscription}</code> must
+                            start with a letter, and contain only letters (<code>[A-Za-z]</code>), numbers
+                            (<code>[0-9]</code>), dashes (<code>-</code>), underscores (<code>_</code>), periods (<code>.</code>), tildes (<code>~</code>),
+                            plus (<code>+</code>) or percent signs (<code>%</code>). It must be between 3 and 255 characters
+                            in length, and it must not start with <code>"goog"</code>.</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$topic</td>
+                <td>The name of the topic from which this subscription is receiving messages.
+                            The value of this field will be <code>_deleted-topic_</code> if the topic has been
+                            deleted.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optionalArgs</td>
+                <td>{
+                            Optional.</p>
+
+<pre><code>@type PushConfig $pushConfig
+     If push delivery is used with this subscription, this field is
+     used to configure it. An empty `pushConfig` signifies that the subscriber
+     will pull and ack messages using API methods.
+@type int $ackDeadlineSeconds
+     This value is the maximum time after a subscriber receives a message
+     before the subscriber should acknowledge the message. After message
+     delivery but before the ack deadline expires and before the message is
+     acknowledged, it is an outstanding message and will not be delivered
+     again during that time (on a best-effort basis).
+
+     For pull subscriptions, this value is used as the initial value for the ack
+     deadline. To override this value for a given message, call
+     `ModifyAckDeadline` with the corresponding `ack_id` if using
+     pull.
+     The maximum custom deadline you can specify is 600 seconds (10 minutes).
+
+     For push delivery, this value is also used to set the request timeout for
+     the call to the push endpoint.
+
+     If the subscriber never acknowledges the message, the Pub/Sub
+     system will eventually redeliver the message.
+
+     If this parameter is 0, a default value of 10 seconds is used.
+@type \Google\GAX\RetrySettings $retrySettings
+     Retry settings to use for this call. If present, then
+     $timeoutMillis is ignored.
+@type int $timeoutMillis
+     Timeout to use for this call. Only used if $retrySettings
+     is not set.
+</code></pre>
+
+<p>}</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../google/pubsub/v1/Subscription.html"><abbr title="google\pubsub\v1\Subscription">Subscription</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Google/GAX/ApiException.html"><abbr title="Google\GAX\ApiException">ApiException</abbr></a></td>
+                <td>if the remote call fails</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSubscription">
+        <div class="location">at line         line 478</div>
+        <code>                    <a href="../../../../google/pubsub/v1/Subscription.html"><abbr title="google\pubsub\v1\Subscription">Subscription</abbr></a>
+    <strong>getSubscription</strong>(string $subscription, array $optionalArgs = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the configuration details of a subscription.</p>                    <p>Sample code:
+<pre><code>
+try {
+    $subscriberClient = new SubscriberClient();
+    $formattedSubscription = SubscriberClient::formatSubscriptionName("[PROJECT]", "[SUBSCRIPTION]");
+    $response = $subscriberClient->getSubscription($formattedSubscription);
+} finally {
+    if (isset($subscriberClient)) {
+        $subscriberClient->close();
+    }
+}
+</pre></code></p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$subscription</td>
+                <td>The name of the subscription to get.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optionalArgs</td>
+                <td>{
+                            Optional.</p>
+
+<pre><code>@type \Google\GAX\RetrySettings $retrySettings
+     Retry settings to use for this call. If present, then
+     $timeoutMillis is ignored.
+@type int $timeoutMillis
+     Timeout to use for this call. Only used if $retrySettings
+     is not set.
+</code></pre>
+
+<p>}</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../google/pubsub/v1/Subscription.html"><abbr title="google\pubsub\v1\Subscription">Subscription</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Google/GAX/ApiException.html"><abbr title="Google\GAX\ApiException">ApiException</abbr></a></td>
+                <td>if the remote call fails</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listSubscriptions">
+        <div class="location">at line         line 542</div>
+        <code>                    <a href="../../../../Google/GAX/PagedListResponse.html"><abbr title="Google\GAX\PagedListResponse">PagedListResponse</abbr></a>
+    <strong>listSubscriptions</strong>(string $project, array $optionalArgs = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Lists matching subscriptions.</p>                    <p>Sample code:
+<pre><code>
+try {
+    $subscriberClient = new SubscriberClient();
+    $formattedProject = SubscriberClient::formatProjectName("[PROJECT]");
+    foreach ($subscriberClient->listSubscriptions($formattedProject) as $element) {
+        // doThingsWith(element);
+    }
+} finally {
+    if (isset($subscriberClient)) {
+        $subscriberClient->close();
+    }
+}
+</pre></code></p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$project</td>
+                <td>The name of the cloud project that subscriptions belong to.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optionalArgs</td>
+                <td>{
+                            Optional.</p>
+
+<pre><code>@type int $pageSize
+     The maximum number of resources contained in the underlying API
+     response. The API may return fewer values in a page, even if
+     there are additional values to be retrieved.
+@type string $pageToken
+     A page token is used to specify a page of values to be returned.
+     If no page token is specified (the default), the first page
+     of values will be returned. Any page token used here must have
+     been generated by a previous call to the API.
+@type \Google\GAX\RetrySettings $retrySettings
+     Retry settings to use for this call. If present, then
+     $timeoutMillis is ignored.
+@type int $timeoutMillis
+     Timeout to use for this call. Only used if $retrySettings
+     is not set.
+</code></pre>
+
+<p>}</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../Google/GAX/PagedListResponse.html"><abbr title="Google\GAX\PagedListResponse">PagedListResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Google/GAX/ApiException.html"><abbr title="Google\GAX\ApiException">ApiException</abbr></a></td>
+                <td>if the remote call fails</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deleteSubscription">
+        <div class="location">at line         line 603</div>
+        <code>                    
+    <strong>deleteSubscription</strong>(string $subscription, array $optionalArgs = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Deletes an existing subscription. All pending messages in the subscription
+are immediately dropped. Calls to <code>Pull</code> after deletion will return
+<code>NOT_FOUND</code>. After a subscription is deleted, a new one may be created with
+the same name, but the new one has no association with the old
+subscription, or its topic unless the same topic is specified.</p>                    <p>Sample code:
+<pre><code>
+try {
+    $subscriberClient = new SubscriberClient();
+    $formattedSubscription = SubscriberClient::formatSubscriptionName("[PROJECT]", "[SUBSCRIPTION]");
+    $subscriberClient->deleteSubscription($formattedSubscription);
+} finally {
+    if (isset($subscriberClient)) {
+        $subscriberClient->close();
+    }
+}
+</pre></code></p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$subscription</td>
+                <td>The subscription to delete.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optionalArgs</td>
+                <td>{
+                            Optional.</p>
+
+<pre><code>@type \Google\GAX\RetrySettings $retrySettings
+     Retry settings to use for this call. If present, then
+     $timeoutMillis is ignored.
+@type int $timeoutMillis
+     Timeout to use for this call. Only used if $retrySettings
+     is not set.
+</code></pre>
+
+<p>}</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Google/GAX/ApiException.html"><abbr title="Google\GAX\ApiException">ApiException</abbr></a></td>
+                <td>if the remote call fails</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_modifyAckDeadline">
+        <div class="location">at line         line 666</div>
+        <code>                    
+    <strong>modifyAckDeadline</strong>(string $subscription, string[] $ackIds, int $ackDeadlineSeconds, array $optionalArgs = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Modifies the ack deadline for a specific message. This method is useful
+to indicate that more time is needed to process a message by the
+subscriber, or to make the message available for redelivery if the
+processing was interrupted. Note that this does not modify the
+subscription-level <code>ackDeadlineSeconds</code> used for subsequent messages.</p>                    <p>Sample code:
+<pre><code>
+try {
+    $subscriberClient = new SubscriberClient();
+    $formattedSubscription = SubscriberClient::formatSubscriptionName("[PROJECT]", "[SUBSCRIPTION]");
+    $ackIds = [];
+    $ackDeadlineSeconds = 0;
+    $subscriberClient->modifyAckDeadline($formattedSubscription, $ackIds, $ackDeadlineSeconds);
+} finally {
+    if (isset($subscriberClient)) {
+        $subscriberClient->close();
+    }
+}
+</pre></code></p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$subscription</td>
+                <td>The name of the subscription.</td>
+            </tr>
+                    <tr>
+                <td>string[]</td>
+                <td>$ackIds</td>
+                <td>List of acknowledgment IDs.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$ackDeadlineSeconds</td>
+                <td>The new ack deadline with respect to the time this request was sent to
+                                    the Pub/Sub system. Must be >= 0. For example, if the value is 10, the new
+                                    ack deadline will expire 10 seconds after the <code>ModifyAckDeadline</code> call
+                                    was made. Specifying zero may immediately make the message available for
+                                    another pull request.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optionalArgs</td>
+                <td>{
+                                    Optional.</p>
+
+<pre><code>@type \Google\GAX\RetrySettings $retrySettings
+     Retry settings to use for this call. If present, then
+     $timeoutMillis is ignored.
+@type int $timeoutMillis
+     Timeout to use for this call. Only used if $retrySettings
+     is not set.
+</code></pre>
+
+<p>}</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Google/GAX/ApiException.html"><abbr title="Google\GAX\ApiException">ApiException</abbr></a></td>
+                <td>if the remote call fails</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_acknowledge">
+        <div class="location">at line         line 730</div>
+        <code>                    
+    <strong>acknowledge</strong>(string $subscription, string[] $ackIds, array $optionalArgs = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Acknowledges the messages associated with the <code>ack_ids</code> in the
+<code>AcknowledgeRequest</code>. The Pub/Sub system can remove the relevant messages
+from the subscription.</p>                    <p>Acknowledging a message whose ack deadline has expired may succeed,
+but such a message may be redelivered later. Acknowledging a message more
+than once will not result in an error.</p>
+
+<p>Sample code:
+<pre><code>
+try {
+    $subscriberClient = new SubscriberClient();
+    $formattedSubscription = SubscriberClient::formatSubscriptionName("[PROJECT]", "[SUBSCRIPTION]");
+    $ackIds = [];
+    $subscriberClient->acknowledge($formattedSubscription, $ackIds);
+} finally {
+    if (isset($subscriberClient)) {
+        $subscriberClient->close();
+    }
+}
+</pre></code></p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$subscription</td>
+                <td>The subscription whose message is being acknowledged.</td>
+            </tr>
+                    <tr>
+                <td>string[]</td>
+                <td>$ackIds</td>
+                <td>The acknowledgment ID for the messages being acknowledged that was returned
+                              by the Pub/Sub system in the <code>Pull</code> response. Must not be empty.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optionalArgs</td>
+                <td>{
+                              Optional.</p>
+
+<pre><code>@type \Google\GAX\RetrySettings $retrySettings
+     Retry settings to use for this call. If present, then
+     $timeoutMillis is ignored.
+@type int $timeoutMillis
+     Timeout to use for this call. Only used if $retrySettings
+     is not set.
+</code></pre>
+
+<p>}</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Google/GAX/ApiException.html"><abbr title="Google\GAX\ApiException">ApiException</abbr></a></td>
+                <td>if the remote call fails</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pull">
+        <div class="location">at line         line 798</div>
+        <code>                    <a href="../../../../google/pubsub/v1/PullResponse.html"><abbr title="google\pubsub\v1\PullResponse">PullResponse</abbr></a>
+    <strong>pull</strong>(string $subscription, int $maxMessages, array $optionalArgs = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Pulls messages from the server. Returns an empty list if there are no
+messages available in the backlog. The server may return <code>UNAVAILABLE</code> if
+there are too many concurrent pull requests pending for the given
+subscription.</p>                    <p>Sample code:
+<pre><code>
+try {
+    $subscriberClient = new SubscriberClient();
+    $formattedSubscription = SubscriberClient::formatSubscriptionName("[PROJECT]", "[SUBSCRIPTION]");
+    $maxMessages = 0;
+    $response = $subscriberClient->pull($formattedSubscription, $maxMessages);
+} finally {
+    if (isset($subscriberClient)) {
+        $subscriberClient->close();
+    }
+}
+</pre></code></p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$subscription</td>
+                <td>The subscription from which messages should be pulled.</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$maxMessages</td>
+                <td>The maximum number of messages returned for this request. The Pub/Sub
+                            system may return fewer than the number specified.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optionalArgs</td>
+                <td>{
+                            Optional.</p>
+
+<pre><code>@type bool $returnImmediately
+     If this is specified as true the system will respond immediately even if
+     it is not able to return a message in the `Pull` response. Otherwise the
+     system is allowed to wait until at least one message is available rather
+     than returning no messages. The client may cancel the request if it does
+     not wish to wait any longer for the response.
+@type \Google\GAX\RetrySettings $retrySettings
+     Retry settings to use for this call. If present, then
+     $timeoutMillis is ignored.
+@type int $timeoutMillis
+     Timeout to use for this call. Only used if $retrySettings
+     is not set.
+</code></pre>
+
+<p>}</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../google/pubsub/v1/PullResponse.html"><abbr title="google\pubsub\v1\PullResponse">PullResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Google/GAX/ApiException.html"><abbr title="Google\GAX\ApiException">ApiException</abbr></a></td>
+                <td>if the remote call fails</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_modifyPushConfig">
+        <div class="location">at line         line 865</div>
+        <code>                    
+    <strong>modifyPushConfig</strong>(string $subscription, <a href="../../../../google/pubsub/v1/PushConfig.html"><abbr title="google\pubsub\v1\PushConfig">PushConfig</abbr></a> $pushConfig, array $optionalArgs = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Modifies the <code>PushConfig</code> for a specified subscription.</p>                    <p>This may be used to change a push subscription to a pull one (signified by
+an empty <code>PushConfig</code>) or vice versa, or change the endpoint URL and other
+attributes of a push subscription. Messages will accumulate for delivery
+continuously through the call regardless of changes to the <code>PushConfig</code>.</p>
+
+<p>Sample code:
+<pre><code>
+try {
+    $subscriberClient = new SubscriberClient();
+    $formattedSubscription = SubscriberClient::formatSubscriptionName("[PROJECT]", "[SUBSCRIPTION]");
+    $pushConfig = new PushConfig();
+    $subscriberClient->modifyPushConfig($formattedSubscription, $pushConfig);
+} finally {
+    if (isset($subscriberClient)) {
+        $subscriberClient->close();
+    }
+}
+</pre></code></p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$subscription</td>
+                <td>The name of the subscription.</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../google/pubsub/v1/PushConfig.html"><abbr title="google\pubsub\v1\PushConfig">PushConfig</abbr></a></td>
+                <td>$pushConfig</td>
+                <td>The push configuration for future deliveries.</p>
+
+<p>An empty <code>pushConfig</code> indicates that the Pub/Sub system should
+stop pushing messages from the given subscription and allow
+messages to be pulled and acknowledged - effectively pausing
+the subscription if <code>Pull</code> is not called.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optionalArgs</td>
+                <td>{
+                           Optional.</p>
+
+<pre><code>@type \Google\GAX\RetrySettings $retrySettings
+     Retry settings to use for this call. If present, then
+     $timeoutMillis is ignored.
+@type int $timeoutMillis
+     Timeout to use for this call. Only used if $retrySettings
+     is not set.
+</code></pre>
+
+<p>}</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Google/GAX/ApiException.html"><abbr title="Google\GAX\ApiException">ApiException</abbr></a></td>
+                <td>if the remote call fails</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setIamPolicy">
+        <div class="location">at line         line 927</div>
+        <code>                    <a href="../../../../google/iam/v1/Policy.html"><abbr title="google\iam\v1\Policy">Policy</abbr></a>
+    <strong>setIamPolicy</strong>(string $resource, <a href="../../../../google/iam/v1/Policy.html"><abbr title="google\iam\v1\Policy">Policy</abbr></a> $policy, array $optionalArgs = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets the access control policy on the specified resource. Replaces any
+existing policy.</p>                    <p>Sample code:
+<pre><code>
+try {
+    $subscriberClient = new SubscriberClient();
+    $formattedResource = SubscriberClient::formatSubscriptionName("[PROJECT]", "[SUBSCRIPTION]");
+    $policy = new Policy();
+    $response = $subscriberClient->setIamPolicy($formattedResource, $policy);
+} finally {
+    if (isset($subscriberClient)) {
+        $subscriberClient->close();
+    }
+}
+</pre></code></p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td>REQUIRED: The resource for which the policy is being specified.
+                            <code>resource</code> is usually specified as a path. For example, a Project
+                            resource is specified as <code>projects/{project}</code>.</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../google/iam/v1/Policy.html"><abbr title="google\iam\v1\Policy">Policy</abbr></a></td>
+                <td>$policy</td>
+                <td>REQUIRED: The complete policy to be applied to the <code>resource</code>. The size of
+                            the policy is limited to a few 10s of KB. An empty policy is a
+                            valid policy but certain Cloud Platform services (such as Projects)
+                            might reject them.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optionalArgs</td>
+                <td>{
+                            Optional.</p>
+
+<pre><code>@type \Google\GAX\RetrySettings $retrySettings
+     Retry settings to use for this call. If present, then
+     $timeoutMillis is ignored.
+@type int $timeoutMillis
+     Timeout to use for this call. Only used if $retrySettings
+     is not set.
+</code></pre>
+
+<p>}</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../google/iam/v1/Policy.html"><abbr title="google\iam\v1\Policy">Policy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Google/GAX/ApiException.html"><abbr title="Google\GAX\ApiException">ApiException</abbr></a></td>
+                <td>if the remote call fails</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIamPolicy">
+        <div class="location">at line         line 985</div>
+        <code>                    <a href="../../../../google/iam/v1/Policy.html"><abbr title="google\iam\v1\Policy">Policy</abbr></a>
+    <strong>getIamPolicy</strong>(string $resource, array $optionalArgs = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the access control policy for a resource.</p>                    <p>Returns an empty policy if the resource exists and does not have a policy
+set.</p>
+
+<p>Sample code:
+<pre><code>
+try {
+    $subscriberClient = new SubscriberClient();
+    $formattedResource = SubscriberClient::formatSubscriptionName("[PROJECT]", "[SUBSCRIPTION]");
+    $response = $subscriberClient->getIamPolicy($formattedResource);
+} finally {
+    if (isset($subscriberClient)) {
+        $subscriberClient->close();
+    }
+}
+</pre></code></p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td>REQUIRED: The resource for which the policy is being requested.
+                            <code>resource</code> is usually specified as a path. For example, a Project
+                            resource is specified as <code>projects/{project}</code>.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optionalArgs</td>
+                <td>{
+                            Optional.</p>
+
+<pre><code>@type \Google\GAX\RetrySettings $retrySettings
+     Retry settings to use for this call. If present, then
+     $timeoutMillis is ignored.
+@type int $timeoutMillis
+     Timeout to use for this call. Only used if $retrySettings
+     is not set.
+</code></pre>
+
+<p>}</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../google/iam/v1/Policy.html"><abbr title="google\iam\v1\Policy">Policy</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Google/GAX/ApiException.html"><abbr title="Google\GAX\ApiException">ApiException</abbr></a></td>
+                <td>if the remote call fails</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testIamPermissions">
+        <div class="location">at line         line 1045</div>
+        <code>                    <a href="../../../../google/iam/v1/TestIamPermissionsResponse.html"><abbr title="google\iam\v1\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a>
+    <strong>testIamPermissions</strong>(string $resource, string[] $permissions, array $optionalArgs = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns permissions that a caller has on the specified resource.</p>                    <p>Sample code:
+<pre><code>
+try {
+    $subscriberClient = new SubscriberClient();
+    $formattedResource = SubscriberClient::formatSubscriptionName("[PROJECT]", "[SUBSCRIPTION]");
+    $permissions = [];
+    $response = $subscriberClient->testIamPermissions($formattedResource, $permissions);
+} finally {
+    if (isset($subscriberClient)) {
+        $subscriberClient->close();
+    }
+}
+</pre></code></p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$resource</td>
+                <td>REQUIRED: The resource for which the policy detail is being requested.
+                              <code>resource</code> is usually specified as a path. For example, a Project
+                              resource is specified as <code>projects/{project}</code>.</td>
+            </tr>
+                    <tr>
+                <td>string[]</td>
+                <td>$permissions</td>
+                <td>The set of permissions to check for the <code>resource</code>. Permissions with
+                              wildcards (such as '&#42;' or 'storage.&#42;') are not allowed. For more
+                              information see
+                              <a href="https://cloud.google.com/iam/docs/overview#permissions">IAM Overview</a>.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$optionalArgs</td>
+                <td>{
+                              Optional.</p>
+
+<pre><code>@type \Google\GAX\RetrySettings $retrySettings
+     Retry settings to use for this call. If present, then
+     $timeoutMillis is ignored.
+@type int $timeoutMillis
+     Timeout to use for this call. Only used if $retrySettings
+     is not set.
+</code></pre>
+
+<p>}</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../google/iam/v1/TestIamPermissionsResponse.html"><abbr title="google\iam\v1\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../Google/GAX/ApiException.html"><abbr title="Google\GAX\ApiException">ApiException</abbr></a></td>
+                <td>if the remote call fails</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_close">
+        <div class="location">at line         line 1073</div>
+        <code>                    
+    <strong>close</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Initiates an orderly shutdown in which preexisting calls continue but new
+calls are immediately cancelled.</p>                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

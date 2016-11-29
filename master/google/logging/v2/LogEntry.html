@@ -1,0 +1,2218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>google\logging\v2\LogEntry | GAX PHP</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:google_logging_v2_LogEntry" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">GAX PHP</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../google.html">google</a></li>
+                                        <li><a href="../../../google/logging.html">logging</a></li>
+                                        <li><a href="../../../google/logging/v2.html">v2</a></li>
+    
+                <li>LogEntry</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            LogEntry
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>LogEntry</strong>        extends <abbr title="DrSlump\Protobuf\Message">Message</abbr>
+</p>
+
+        
+    
+
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_log_name">
+                                                                                string
+                </td>
+                <td>$log_name</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_resource">
+                                                                                <a href="../../../google/api/MonitoredResource.html"><abbr title="google\api\MonitoredResource">MonitoredResource</abbr></a>
+                </td>
+                <td>$resource</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_proto_payload">
+                                                                                <a href="../../../google/protobuf/Any.html"><abbr title="google\protobuf\Any">Any</abbr></a>
+                </td>
+                <td>$proto_payload</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_text_payload">
+                                                                                string
+                </td>
+                <td>$text_payload</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_json_payload">
+                                                                                <a href="../../../google/protobuf/Struct.html"><abbr title="google\protobuf\Struct">Struct</abbr></a>
+                </td>
+                <td>$json_payload</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_timestamp">
+                                                                                <a href="../../../google/protobuf/Timestamp.html"><abbr title="google\protobuf\Timestamp">Timestamp</abbr></a>
+                </td>
+                <td>$timestamp</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_severity">
+                                                                                int
+                </td>
+                <td>$severity</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_insert_id">
+                                                                                string
+                </td>
+                <td>$insert_id</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_http_request">
+                                                                                <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+                </td>
+                <td>$http_request</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_labels">
+                                                                                <a href="../../../google/logging/v2/LogEntry/LabelsEntry.html"><abbr title="google\logging\v2\LogEntry\LabelsEntry">LabelsEntry</abbr></a>[]
+                </td>
+                <td>$labels</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_operation">
+                                                                                <a href="../../../google/logging/v2/LogEntryOperation.html"><abbr title="google\logging\v2\LogEntryOperation">LogEntryOperation</abbr></a>
+                </td>
+                <td>$operation</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_descriptor">descriptor</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasLogName">hasLogName</a>()
+        
+                                            <p>Check if <log_name> has a value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearLogName">clearLogName</a>()
+        
+                                            <p>Clear <log_name> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLogName">getLogName</a>()
+        
+                                            <p>Get <log_name> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setLogName">setLogName</a>(string $value)
+        
+                                            <p>Set <log_name> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasResource">hasResource</a>()
+        
+                                            <p>Check if <resource> has a value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearResource">clearResource</a>()
+        
+                                            <p>Clear <resource> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/api/MonitoredResource.html"><abbr title="google\api\MonitoredResource">MonitoredResource</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getResource">getResource</a>()
+        
+                                            <p>Get <resource> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setResource">setResource</a>(<a href="../../../google/api/MonitoredResource.html"><abbr title="google\api\MonitoredResource">MonitoredResource</abbr></a> $value)
+        
+                                            <p>Set <resource> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasProtoPayload">hasProtoPayload</a>()
+        
+                                            <p>Check if <proto_payload> has a value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearProtoPayload">clearProtoPayload</a>()
+        
+                                            <p>Clear <proto_payload> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/protobuf/Any.html"><abbr title="google\protobuf\Any">Any</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getProtoPayload">getProtoPayload</a>()
+        
+                                            <p>Get <proto_payload> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setProtoPayload">setProtoPayload</a>(<a href="../../../google/protobuf/Any.html"><abbr title="google\protobuf\Any">Any</abbr></a> $value)
+        
+                                            <p>Set <proto_payload> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasTextPayload">hasTextPayload</a>()
+        
+                                            <p>Check if <text_payload> has a value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearTextPayload">clearTextPayload</a>()
+        
+                                            <p>Clear <text_payload> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTextPayload">getTextPayload</a>()
+        
+                                            <p>Get <text_payload> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTextPayload">setTextPayload</a>(string $value)
+        
+                                            <p>Set <text_payload> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasJsonPayload">hasJsonPayload</a>()
+        
+                                            <p>Check if <json_payload> has a value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearJsonPayload">clearJsonPayload</a>()
+        
+                                            <p>Clear <json_payload> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/protobuf/Struct.html"><abbr title="google\protobuf\Struct">Struct</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getJsonPayload">getJsonPayload</a>()
+        
+                                            <p>Get <json_payload> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setJsonPayload">setJsonPayload</a>(<a href="../../../google/protobuf/Struct.html"><abbr title="google\protobuf\Struct">Struct</abbr></a> $value)
+        
+                                            <p>Set <json_payload> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasTimestamp">hasTimestamp</a>()
+        
+                                            <p>Check if <timestamp> has a value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearTimestamp">clearTimestamp</a>()
+        
+                                            <p>Clear <timestamp> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/protobuf/Timestamp.html"><abbr title="google\protobuf\Timestamp">Timestamp</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTimestamp">getTimestamp</a>()
+        
+                                            <p>Get <timestamp> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTimestamp">setTimestamp</a>(<a href="../../../google/protobuf/Timestamp.html"><abbr title="google\protobuf\Timestamp">Timestamp</abbr></a> $value)
+        
+                                            <p>Set <timestamp> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasSeverity">hasSeverity</a>()
+        
+                                            <p>Check if <severity> has a value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearSeverity">clearSeverity</a>()
+        
+                                            <p>Clear <severity> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSeverity">getSeverity</a>()
+        
+                                            <p>Get <severity> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setSeverity">setSeverity</a>(int $value)
+        
+                                            <p>Set <severity> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasInsertId">hasInsertId</a>()
+        
+                                            <p>Check if <insert_id> has a value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearInsertId">clearInsertId</a>()
+        
+                                            <p>Clear <insert_id> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getInsertId">getInsertId</a>()
+        
+                                            <p>Get <insert_id> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setInsertId">setInsertId</a>(string $value)
+        
+                                            <p>Set <insert_id> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasHttpRequest">hasHttpRequest</a>()
+        
+                                            <p>Check if <http_request> has a value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearHttpRequest">clearHttpRequest</a>()
+        
+                                            <p>Clear <http_request> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHttpRequest">getHttpRequest</a>()
+        
+                                            <p>Get <http_request> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setHttpRequest">setHttpRequest</a>(<a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a> $value)
+        
+                                            <p>Set <http_request> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasLabels">hasLabels</a>()
+        
+                                            <p>Check if <labels> has a value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearLabels">clearLabels</a>()
+        
+                                            <p>Clear <labels> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/v2/LogEntry/LabelsEntry.html"><abbr title="google\logging\v2\LogEntry\LabelsEntry">LabelsEntry</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLabels">getLabels</a>(int $idx = NULL)
+        
+                                            <p>Get <labels> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setLabels">setLabels</a>(<a href="../../../google/logging/v2/LogEntry/LabelsEntry.html"><abbr title="google\logging\v2\LogEntry\LabelsEntry">LabelsEntry</abbr></a> $value, $idx = NULL)
+        
+                                            <p>Set <labels> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/v2/LogEntry/LabelsEntry.html"><abbr title="google\logging\v2\LogEntry\LabelsEntry">LabelsEntry</abbr></a>[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLabelsList">getLabelsList</a>()
+        
+                                            <p>Get all elements of <labels></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addLabels">addLabels</a>(<a href="../../../google/logging/v2/LogEntry/LabelsEntry.html"><abbr title="google\logging\v2\LogEntry\LabelsEntry">LabelsEntry</abbr></a> $value)
+        
+                                            <p>Add a new element to <labels></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasOperation">hasOperation</a>()
+        
+                                            <p>Check if <operation> has a value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearOperation">clearOperation</a>()
+        
+                                            <p>Clear <operation> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/v2/LogEntryOperation.html"><abbr title="google\logging\v2\LogEntryOperation">LogEntryOperation</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOperation">getOperation</a>()
+        
+                                            <p>Get <operation> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setOperation">setOperation</a>(<a href="../../../google/logging/v2/LogEntryOperation.html"><abbr title="google\logging\v2\LogEntryOperation">LogEntryOperation</abbr></a> $value)
+        
+                                            <p>Set <operation> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_descriptor">
+        <div class="location">at line         line 164</div>
+        <code>        static            
+    <strong>descriptor</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasLogName">
+        <div class="location">at line         line 276</div>
+        <code>                    boolean
+    <strong>hasLogName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if <log_name> has a value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearLogName">
+        <div class="location">at line         line 285</div>
+        <code>                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+    <strong>clearLogName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear <log_name> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLogName">
+        <div class="location">at line         line 294</div>
+        <code>                    string
+    <strong>getLogName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get <log_name> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLogName">
+        <div class="location">at line         line 304</div>
+        <code>                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+    <strong>setLogName</strong>(string $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set <log_name> value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasResource">
+        <div class="location">at line         line 313</div>
+        <code>                    boolean
+    <strong>hasResource</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if <resource> has a value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearResource">
+        <div class="location">at line         line 322</div>
+        <code>                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+    <strong>clearResource</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear <resource> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getResource">
+        <div class="location">at line         line 331</div>
+        <code>                    <a href="../../../google/api/MonitoredResource.html"><abbr title="google\api\MonitoredResource">MonitoredResource</abbr></a>
+    <strong>getResource</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get <resource> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/api/MonitoredResource.html"><abbr title="google\api\MonitoredResource">MonitoredResource</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setResource">
+        <div class="location">at line         line 341</div>
+        <code>                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+    <strong>setResource</strong>(<a href="../../../google/api/MonitoredResource.html"><abbr title="google\api\MonitoredResource">MonitoredResource</abbr></a> $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set <resource> value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../google/api/MonitoredResource.html"><abbr title="google\api\MonitoredResource">MonitoredResource</abbr></a></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasProtoPayload">
+        <div class="location">at line         line 350</div>
+        <code>                    boolean
+    <strong>hasProtoPayload</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if <proto_payload> has a value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearProtoPayload">
+        <div class="location">at line         line 359</div>
+        <code>                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+    <strong>clearProtoPayload</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear <proto_payload> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getProtoPayload">
+        <div class="location">at line         line 368</div>
+        <code>                    <a href="../../../google/protobuf/Any.html"><abbr title="google\protobuf\Any">Any</abbr></a>
+    <strong>getProtoPayload</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get <proto_payload> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/protobuf/Any.html"><abbr title="google\protobuf\Any">Any</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setProtoPayload">
+        <div class="location">at line         line 378</div>
+        <code>                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+    <strong>setProtoPayload</strong>(<a href="../../../google/protobuf/Any.html"><abbr title="google\protobuf\Any">Any</abbr></a> $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set <proto_payload> value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../google/protobuf/Any.html"><abbr title="google\protobuf\Any">Any</abbr></a></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasTextPayload">
+        <div class="location">at line         line 387</div>
+        <code>                    boolean
+    <strong>hasTextPayload</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if <text_payload> has a value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearTextPayload">
+        <div class="location">at line         line 396</div>
+        <code>                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+    <strong>clearTextPayload</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear <text_payload> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTextPayload">
+        <div class="location">at line         line 405</div>
+        <code>                    string
+    <strong>getTextPayload</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get <text_payload> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTextPayload">
+        <div class="location">at line         line 415</div>
+        <code>                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+    <strong>setTextPayload</strong>(string $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set <text_payload> value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasJsonPayload">
+        <div class="location">at line         line 424</div>
+        <code>                    boolean
+    <strong>hasJsonPayload</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if <json_payload> has a value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearJsonPayload">
+        <div class="location">at line         line 433</div>
+        <code>                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+    <strong>clearJsonPayload</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear <json_payload> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getJsonPayload">
+        <div class="location">at line         line 442</div>
+        <code>                    <a href="../../../google/protobuf/Struct.html"><abbr title="google\protobuf\Struct">Struct</abbr></a>
+    <strong>getJsonPayload</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get <json_payload> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/protobuf/Struct.html"><abbr title="google\protobuf\Struct">Struct</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setJsonPayload">
+        <div class="location">at line         line 452</div>
+        <code>                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+    <strong>setJsonPayload</strong>(<a href="../../../google/protobuf/Struct.html"><abbr title="google\protobuf\Struct">Struct</abbr></a> $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set <json_payload> value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../google/protobuf/Struct.html"><abbr title="google\protobuf\Struct">Struct</abbr></a></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasTimestamp">
+        <div class="location">at line         line 461</div>
+        <code>                    boolean
+    <strong>hasTimestamp</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if <timestamp> has a value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearTimestamp">
+        <div class="location">at line         line 470</div>
+        <code>                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+    <strong>clearTimestamp</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear <timestamp> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTimestamp">
+        <div class="location">at line         line 479</div>
+        <code>                    <a href="../../../google/protobuf/Timestamp.html"><abbr title="google\protobuf\Timestamp">Timestamp</abbr></a>
+    <strong>getTimestamp</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get <timestamp> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/protobuf/Timestamp.html"><abbr title="google\protobuf\Timestamp">Timestamp</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTimestamp">
+        <div class="location">at line         line 489</div>
+        <code>                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+    <strong>setTimestamp</strong>(<a href="../../../google/protobuf/Timestamp.html"><abbr title="google\protobuf\Timestamp">Timestamp</abbr></a> $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set <timestamp> value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../google/protobuf/Timestamp.html"><abbr title="google\protobuf\Timestamp">Timestamp</abbr></a></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasSeverity">
+        <div class="location">at line         line 498</div>
+        <code>                    boolean
+    <strong>hasSeverity</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if <severity> has a value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearSeverity">
+        <div class="location">at line         line 507</div>
+        <code>                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+    <strong>clearSeverity</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear <severity> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSeverity">
+        <div class="location">at line         line 516</div>
+        <code>                    int
+    <strong>getSeverity</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get <severity> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td><ul>
+<li>\google\logging\type\LogSeverity</li>
+</ul>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSeverity">
+        <div class="location">at line         line 526</div>
+        <code>                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+    <strong>setSeverity</strong>(int $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set <severity> value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$value</td>
+                <td><ul>
+<li>\google\logging\type\LogSeverity $value</li>
+</ul>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasInsertId">
+        <div class="location">at line         line 535</div>
+        <code>                    boolean
+    <strong>hasInsertId</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if <insert_id> has a value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearInsertId">
+        <div class="location">at line         line 544</div>
+        <code>                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+    <strong>clearInsertId</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear <insert_id> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getInsertId">
+        <div class="location">at line         line 553</div>
+        <code>                    string
+    <strong>getInsertId</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get <insert_id> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setInsertId">
+        <div class="location">at line         line 563</div>
+        <code>                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+    <strong>setInsertId</strong>(string $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set <insert_id> value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasHttpRequest">
+        <div class="location">at line         line 572</div>
+        <code>                    boolean
+    <strong>hasHttpRequest</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if <http_request> has a value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearHttpRequest">
+        <div class="location">at line         line 581</div>
+        <code>                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+    <strong>clearHttpRequest</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear <http_request> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHttpRequest">
+        <div class="location">at line         line 590</div>
+        <code>                    <a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a>
+    <strong>getHttpRequest</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get <http_request> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setHttpRequest">
+        <div class="location">at line         line 600</div>
+        <code>                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+    <strong>setHttpRequest</strong>(<a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a> $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set <http_request> value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../google/logging/type/HttpRequest.html"><abbr title="google\logging\type\HttpRequest">HttpRequest</abbr></a></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasLabels">
+        <div class="location">at line         line 609</div>
+        <code>                    boolean
+    <strong>hasLabels</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if <labels> has a value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearLabels">
+        <div class="location">at line         line 618</div>
+        <code>                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+    <strong>clearLabels</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear <labels> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLabels">
+        <div class="location">at line         line 628</div>
+        <code>                    <a href="../../../google/logging/v2/LogEntry/LabelsEntry.html"><abbr title="google\logging\v2\LogEntry\LabelsEntry">LabelsEntry</abbr></a>
+    <strong>getLabels</strong>(int $idx = NULL)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get <labels> value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$idx</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/v2/LogEntry/LabelsEntry.html"><abbr title="google\logging\v2\LogEntry\LabelsEntry">LabelsEntry</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLabels">
+        <div class="location">at line         line 638</div>
+        <code>                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+    <strong>setLabels</strong>(<a href="../../../google/logging/v2/LogEntry/LabelsEntry.html"><abbr title="google\logging\v2\LogEntry\LabelsEntry">LabelsEntry</abbr></a> $value, $idx = NULL)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set <labels> value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../google/logging/v2/LogEntry/LabelsEntry.html"><abbr title="google\logging\v2\LogEntry\LabelsEntry">LabelsEntry</abbr></a></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$idx</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLabelsList">
+        <div class="location">at line         line 647</div>
+        <code>                    <a href="../../../google/logging/v2/LogEntry/LabelsEntry.html"><abbr title="google\logging\v2\LogEntry\LabelsEntry">LabelsEntry</abbr></a>[]
+    <strong>getLabelsList</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get all elements of <labels></p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/v2/LogEntry/LabelsEntry.html"><abbr title="google\logging\v2\LogEntry\LabelsEntry">LabelsEntry</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addLabels">
+        <div class="location">at line         line 657</div>
+        <code>                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+    <strong>addLabels</strong>(<a href="../../../google/logging/v2/LogEntry/LabelsEntry.html"><abbr title="google\logging\v2\LogEntry\LabelsEntry">LabelsEntry</abbr></a> $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a new element to <labels></p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../google/logging/v2/LogEntry/LabelsEntry.html"><abbr title="google\logging\v2\LogEntry\LabelsEntry">LabelsEntry</abbr></a></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasOperation">
+        <div class="location">at line         line 666</div>
+        <code>                    boolean
+    <strong>hasOperation</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if <operation> has a value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearOperation">
+        <div class="location">at line         line 675</div>
+        <code>                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+    <strong>clearOperation</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear <operation> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOperation">
+        <div class="location">at line         line 684</div>
+        <code>                    <a href="../../../google/logging/v2/LogEntryOperation.html"><abbr title="google\logging\v2\LogEntryOperation">LogEntryOperation</abbr></a>
+    <strong>getOperation</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get <operation> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/v2/LogEntryOperation.html"><abbr title="google\logging\v2\LogEntryOperation">LogEntryOperation</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOperation">
+        <div class="location">at line         line 694</div>
+        <code>                    <a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a>
+    <strong>setOperation</strong>(<a href="../../../google/logging/v2/LogEntryOperation.html"><abbr title="google\logging\v2\LogEntryOperation">LogEntryOperation</abbr></a> $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set <operation> value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../google/logging/v2/LogEntryOperation.html"><abbr title="google\logging\v2\LogEntryOperation">LogEntryOperation</abbr></a></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/logging/v2/LogEntry.html"><abbr title="google\logging\v2\LogEntry">LogEntry</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

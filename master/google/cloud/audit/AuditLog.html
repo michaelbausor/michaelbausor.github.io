@@ -1,0 +1,2212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>google\cloud\audit\AuditLog | GAX PHP</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:google_cloud_audit_AuditLog" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">GAX PHP</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../google.html">google</a></li>
+                                        <li><a href="../../../google/cloud.html">cloud</a></li>
+                                        <li><a href="../../../google/cloud/audit.html">audit</a></li>
+    
+                <li>AuditLog</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            AuditLog
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>AuditLog</strong>        extends <abbr title="DrSlump\Protobuf\Message">Message</abbr>
+</p>
+
+        
+    
+
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_service_name">
+                                                                                string
+                </td>
+                <td>$service_name</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_method_name">
+                                                                                string
+                </td>
+                <td>$method_name</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_resource_name">
+                                                                                string
+                </td>
+                <td>$resource_name</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_num_response_items">
+                                                                                int
+                </td>
+                <td>$num_response_items</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_status">
+                                                                                <a href="../../../google/rpc/Status.html"><abbr title="google\rpc\Status">Status</abbr></a>
+                </td>
+                <td>$status</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_authentication_info">
+                                                                                <a href="../../../google/cloud/audit/AuthenticationInfo.html"><abbr title="google\cloud\audit\AuthenticationInfo">AuthenticationInfo</abbr></a>
+                </td>
+                <td>$authentication_info</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_authorization_info">
+                                                                                <a href="../../../google/cloud/audit/AuthorizationInfo.html"><abbr title="google\cloud\audit\AuthorizationInfo">AuthorizationInfo</abbr></a>[]
+                </td>
+                <td>$authorization_info</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_request_metadata">
+                                                                                <a href="../../../google/cloud/audit/RequestMetadata.html"><abbr title="google\cloud\audit\RequestMetadata">RequestMetadata</abbr></a>
+                </td>
+                <td>$request_metadata</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_request">
+                                                                                <a href="../../../google/protobuf/Struct.html"><abbr title="google\protobuf\Struct">Struct</abbr></a>
+                </td>
+                <td>$request</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_response">
+                                                                                <a href="../../../google/protobuf/Struct.html"><abbr title="google\protobuf\Struct">Struct</abbr></a>
+                </td>
+                <td>$response</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_service_data">
+                                                                                <a href="../../../google/protobuf/Any.html"><abbr title="google\protobuf\Any">Any</abbr></a>
+                </td>
+                <td>$service_data</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_descriptor">descriptor</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasServiceName">hasServiceName</a>()
+        
+                                            <p>Check if <service_name> has a value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearServiceName">clearServiceName</a>()
+        
+                                            <p>Clear <service_name> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getServiceName">getServiceName</a>()
+        
+                                            <p>Get <service_name> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setServiceName">setServiceName</a>(string $value)
+        
+                                            <p>Set <service_name> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasMethodName">hasMethodName</a>()
+        
+                                            <p>Check if <method_name> has a value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearMethodName">clearMethodName</a>()
+        
+                                            <p>Clear <method_name> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMethodName">getMethodName</a>()
+        
+                                            <p>Get <method_name> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setMethodName">setMethodName</a>(string $value)
+        
+                                            <p>Set <method_name> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasResourceName">hasResourceName</a>()
+        
+                                            <p>Check if <resource_name> has a value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearResourceName">clearResourceName</a>()
+        
+                                            <p>Clear <resource_name> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getResourceName">getResourceName</a>()
+        
+                                            <p>Get <resource_name> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setResourceName">setResourceName</a>(string $value)
+        
+                                            <p>Set <resource_name> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasNumResponseItems">hasNumResponseItems</a>()
+        
+                                            <p>Check if <num_response_items> has a value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearNumResponseItems">clearNumResponseItems</a>()
+        
+                                            <p>Clear <num_response_items> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getNumResponseItems">getNumResponseItems</a>()
+        
+                                            <p>Get <num_response_items> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setNumResponseItems">setNumResponseItems</a>(int $value)
+        
+                                            <p>Set <num_response_items> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasStatus">hasStatus</a>()
+        
+                                            <p>Check if <status> has a value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearStatus">clearStatus</a>()
+        
+                                            <p>Clear <status> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/rpc/Status.html"><abbr title="google\rpc\Status">Status</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getStatus">getStatus</a>()
+        
+                                            <p>Get <status> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setStatus">setStatus</a>(<a href="../../../google/rpc/Status.html"><abbr title="google\rpc\Status">Status</abbr></a> $value)
+        
+                                            <p>Set <status> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasAuthenticationInfo">hasAuthenticationInfo</a>()
+        
+                                            <p>Check if <authentication_info> has a value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearAuthenticationInfo">clearAuthenticationInfo</a>()
+        
+                                            <p>Clear <authentication_info> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/cloud/audit/AuthenticationInfo.html"><abbr title="google\cloud\audit\AuthenticationInfo">AuthenticationInfo</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAuthenticationInfo">getAuthenticationInfo</a>()
+        
+                                            <p>Get <authentication_info> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAuthenticationInfo">setAuthenticationInfo</a>(<a href="../../../google/cloud/audit/AuthenticationInfo.html"><abbr title="google\cloud\audit\AuthenticationInfo">AuthenticationInfo</abbr></a> $value)
+        
+                                            <p>Set <authentication_info> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasAuthorizationInfo">hasAuthorizationInfo</a>()
+        
+                                            <p>Check if <authorization_info> has a value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearAuthorizationInfo">clearAuthorizationInfo</a>()
+        
+                                            <p>Clear <authorization_info> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/cloud/audit/AuthorizationInfo.html"><abbr title="google\cloud\audit\AuthorizationInfo">AuthorizationInfo</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAuthorizationInfo">getAuthorizationInfo</a>(int $idx = NULL)
+        
+                                            <p>Get <authorization_info> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAuthorizationInfo">setAuthorizationInfo</a>(<a href="../../../google/cloud/audit/AuthorizationInfo.html"><abbr title="google\cloud\audit\AuthorizationInfo">AuthorizationInfo</abbr></a> $value, $idx = NULL)
+        
+                                            <p>Set <authorization_info> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/cloud/audit/AuthorizationInfo.html"><abbr title="google\cloud\audit\AuthorizationInfo">AuthorizationInfo</abbr></a>[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAuthorizationInfoList">getAuthorizationInfoList</a>()
+        
+                                            <p>Get all elements of <authorization_info></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addAuthorizationInfo">addAuthorizationInfo</a>(<a href="../../../google/cloud/audit/AuthorizationInfo.html"><abbr title="google\cloud\audit\AuthorizationInfo">AuthorizationInfo</abbr></a> $value)
+        
+                                            <p>Add a new element to <authorization_info></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasRequestMetadata">hasRequestMetadata</a>()
+        
+                                            <p>Check if <request_metadata> has a value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearRequestMetadata">clearRequestMetadata</a>()
+        
+                                            <p>Clear <request_metadata> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/cloud/audit/RequestMetadata.html"><abbr title="google\cloud\audit\RequestMetadata">RequestMetadata</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRequestMetadata">getRequestMetadata</a>()
+        
+                                            <p>Get <request_metadata> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRequestMetadata">setRequestMetadata</a>(<a href="../../../google/cloud/audit/RequestMetadata.html"><abbr title="google\cloud\audit\RequestMetadata">RequestMetadata</abbr></a> $value)
+        
+                                            <p>Set <request_metadata> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasRequest">hasRequest</a>()
+        
+                                            <p>Check if <request> has a value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearRequest">clearRequest</a>()
+        
+                                            <p>Clear <request> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/protobuf/Struct.html"><abbr title="google\protobuf\Struct">Struct</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRequest">getRequest</a>()
+        
+                                            <p>Get <request> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRequest">setRequest</a>(<a href="../../../google/protobuf/Struct.html"><abbr title="google\protobuf\Struct">Struct</abbr></a> $value)
+        
+                                            <p>Set <request> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasResponse">hasResponse</a>()
+        
+                                            <p>Check if <response> has a value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearResponse">clearResponse</a>()
+        
+                                            <p>Clear <response> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/protobuf/Struct.html"><abbr title="google\protobuf\Struct">Struct</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getResponse">getResponse</a>()
+        
+                                            <p>Get <response> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setResponse">setResponse</a>(<a href="../../../google/protobuf/Struct.html"><abbr title="google\protobuf\Struct">Struct</abbr></a> $value)
+        
+                                            <p>Set <response> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasServiceData">hasServiceData</a>()
+        
+                                            <p>Check if <service_data> has a value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearServiceData">clearServiceData</a>()
+        
+                                            <p>Clear <service_data> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/protobuf/Any.html"><abbr title="google\protobuf\Any">Any</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getServiceData">getServiceData</a>()
+        
+                                            <p>Get <service_data> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setServiceData">setServiceData</a>(<a href="../../../google/protobuf/Any.html"><abbr title="google\protobuf\Any">Any</abbr></a> $value)
+        
+                                            <p>Set <service_data> value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_descriptor">
+        <div class="location">at line         line 47</div>
+        <code>        static            
+    <strong>descriptor</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasServiceName">
+        <div class="location">at line         line 158</div>
+        <code>                    boolean
+    <strong>hasServiceName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if <service_name> has a value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearServiceName">
+        <div class="location">at line         line 167</div>
+        <code>                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+    <strong>clearServiceName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear <service_name> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getServiceName">
+        <div class="location">at line         line 176</div>
+        <code>                    string
+    <strong>getServiceName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get <service_name> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setServiceName">
+        <div class="location">at line         line 186</div>
+        <code>                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+    <strong>setServiceName</strong>(string $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set <service_name> value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasMethodName">
+        <div class="location">at line         line 195</div>
+        <code>                    boolean
+    <strong>hasMethodName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if <method_name> has a value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearMethodName">
+        <div class="location">at line         line 204</div>
+        <code>                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+    <strong>clearMethodName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear <method_name> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMethodName">
+        <div class="location">at line         line 213</div>
+        <code>                    string
+    <strong>getMethodName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get <method_name> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMethodName">
+        <div class="location">at line         line 223</div>
+        <code>                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+    <strong>setMethodName</strong>(string $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set <method_name> value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasResourceName">
+        <div class="location">at line         line 232</div>
+        <code>                    boolean
+    <strong>hasResourceName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if <resource_name> has a value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearResourceName">
+        <div class="location">at line         line 241</div>
+        <code>                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+    <strong>clearResourceName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear <resource_name> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getResourceName">
+        <div class="location">at line         line 250</div>
+        <code>                    string
+    <strong>getResourceName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get <resource_name> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setResourceName">
+        <div class="location">at line         line 260</div>
+        <code>                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+    <strong>setResourceName</strong>(string $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set <resource_name> value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasNumResponseItems">
+        <div class="location">at line         line 269</div>
+        <code>                    boolean
+    <strong>hasNumResponseItems</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if <num_response_items> has a value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearNumResponseItems">
+        <div class="location">at line         line 278</div>
+        <code>                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+    <strong>clearNumResponseItems</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear <num_response_items> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getNumResponseItems">
+        <div class="location">at line         line 287</div>
+        <code>                    int
+    <strong>getNumResponseItems</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get <num_response_items> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setNumResponseItems">
+        <div class="location">at line         line 297</div>
+        <code>                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+    <strong>setNumResponseItems</strong>(int $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set <num_response_items> value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasStatus">
+        <div class="location">at line         line 306</div>
+        <code>                    boolean
+    <strong>hasStatus</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if <status> has a value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearStatus">
+        <div class="location">at line         line 315</div>
+        <code>                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+    <strong>clearStatus</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear <status> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getStatus">
+        <div class="location">at line         line 324</div>
+        <code>                    <a href="../../../google/rpc/Status.html"><abbr title="google\rpc\Status">Status</abbr></a>
+    <strong>getStatus</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get <status> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/rpc/Status.html"><abbr title="google\rpc\Status">Status</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setStatus">
+        <div class="location">at line         line 334</div>
+        <code>                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+    <strong>setStatus</strong>(<a href="../../../google/rpc/Status.html"><abbr title="google\rpc\Status">Status</abbr></a> $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set <status> value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../google/rpc/Status.html"><abbr title="google\rpc\Status">Status</abbr></a></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasAuthenticationInfo">
+        <div class="location">at line         line 343</div>
+        <code>                    boolean
+    <strong>hasAuthenticationInfo</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if <authentication_info> has a value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearAuthenticationInfo">
+        <div class="location">at line         line 352</div>
+        <code>                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+    <strong>clearAuthenticationInfo</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear <authentication_info> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAuthenticationInfo">
+        <div class="location">at line         line 361</div>
+        <code>                    <a href="../../../google/cloud/audit/AuthenticationInfo.html"><abbr title="google\cloud\audit\AuthenticationInfo">AuthenticationInfo</abbr></a>
+    <strong>getAuthenticationInfo</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get <authentication_info> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/cloud/audit/AuthenticationInfo.html"><abbr title="google\cloud\audit\AuthenticationInfo">AuthenticationInfo</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAuthenticationInfo">
+        <div class="location">at line         line 371</div>
+        <code>                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+    <strong>setAuthenticationInfo</strong>(<a href="../../../google/cloud/audit/AuthenticationInfo.html"><abbr title="google\cloud\audit\AuthenticationInfo">AuthenticationInfo</abbr></a> $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set <authentication_info> value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../google/cloud/audit/AuthenticationInfo.html"><abbr title="google\cloud\audit\AuthenticationInfo">AuthenticationInfo</abbr></a></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasAuthorizationInfo">
+        <div class="location">at line         line 380</div>
+        <code>                    boolean
+    <strong>hasAuthorizationInfo</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if <authorization_info> has a value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearAuthorizationInfo">
+        <div class="location">at line         line 389</div>
+        <code>                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+    <strong>clearAuthorizationInfo</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear <authorization_info> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAuthorizationInfo">
+        <div class="location">at line         line 399</div>
+        <code>                    <a href="../../../google/cloud/audit/AuthorizationInfo.html"><abbr title="google\cloud\audit\AuthorizationInfo">AuthorizationInfo</abbr></a>
+    <strong>getAuthorizationInfo</strong>(int $idx = NULL)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get <authorization_info> value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$idx</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/cloud/audit/AuthorizationInfo.html"><abbr title="google\cloud\audit\AuthorizationInfo">AuthorizationInfo</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAuthorizationInfo">
+        <div class="location">at line         line 409</div>
+        <code>                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+    <strong>setAuthorizationInfo</strong>(<a href="../../../google/cloud/audit/AuthorizationInfo.html"><abbr title="google\cloud\audit\AuthorizationInfo">AuthorizationInfo</abbr></a> $value, $idx = NULL)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set <authorization_info> value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../google/cloud/audit/AuthorizationInfo.html"><abbr title="google\cloud\audit\AuthorizationInfo">AuthorizationInfo</abbr></a></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$idx</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAuthorizationInfoList">
+        <div class="location">at line         line 418</div>
+        <code>                    <a href="../../../google/cloud/audit/AuthorizationInfo.html"><abbr title="google\cloud\audit\AuthorizationInfo">AuthorizationInfo</abbr></a>[]
+    <strong>getAuthorizationInfoList</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get all elements of <authorization_info></p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/cloud/audit/AuthorizationInfo.html"><abbr title="google\cloud\audit\AuthorizationInfo">AuthorizationInfo</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addAuthorizationInfo">
+        <div class="location">at line         line 428</div>
+        <code>                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+    <strong>addAuthorizationInfo</strong>(<a href="../../../google/cloud/audit/AuthorizationInfo.html"><abbr title="google\cloud\audit\AuthorizationInfo">AuthorizationInfo</abbr></a> $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a new element to <authorization_info></p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../google/cloud/audit/AuthorizationInfo.html"><abbr title="google\cloud\audit\AuthorizationInfo">AuthorizationInfo</abbr></a></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasRequestMetadata">
+        <div class="location">at line         line 437</div>
+        <code>                    boolean
+    <strong>hasRequestMetadata</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if <request_metadata> has a value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearRequestMetadata">
+        <div class="location">at line         line 446</div>
+        <code>                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+    <strong>clearRequestMetadata</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear <request_metadata> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRequestMetadata">
+        <div class="location">at line         line 455</div>
+        <code>                    <a href="../../../google/cloud/audit/RequestMetadata.html"><abbr title="google\cloud\audit\RequestMetadata">RequestMetadata</abbr></a>
+    <strong>getRequestMetadata</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get <request_metadata> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/cloud/audit/RequestMetadata.html"><abbr title="google\cloud\audit\RequestMetadata">RequestMetadata</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRequestMetadata">
+        <div class="location">at line         line 465</div>
+        <code>                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+    <strong>setRequestMetadata</strong>(<a href="../../../google/cloud/audit/RequestMetadata.html"><abbr title="google\cloud\audit\RequestMetadata">RequestMetadata</abbr></a> $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set <request_metadata> value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../google/cloud/audit/RequestMetadata.html"><abbr title="google\cloud\audit\RequestMetadata">RequestMetadata</abbr></a></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasRequest">
+        <div class="location">at line         line 474</div>
+        <code>                    boolean
+    <strong>hasRequest</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if <request> has a value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearRequest">
+        <div class="location">at line         line 483</div>
+        <code>                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+    <strong>clearRequest</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear <request> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRequest">
+        <div class="location">at line         line 492</div>
+        <code>                    <a href="../../../google/protobuf/Struct.html"><abbr title="google\protobuf\Struct">Struct</abbr></a>
+    <strong>getRequest</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get <request> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/protobuf/Struct.html"><abbr title="google\protobuf\Struct">Struct</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRequest">
+        <div class="location">at line         line 502</div>
+        <code>                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+    <strong>setRequest</strong>(<a href="../../../google/protobuf/Struct.html"><abbr title="google\protobuf\Struct">Struct</abbr></a> $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set <request> value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../google/protobuf/Struct.html"><abbr title="google\protobuf\Struct">Struct</abbr></a></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasResponse">
+        <div class="location">at line         line 511</div>
+        <code>                    boolean
+    <strong>hasResponse</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if <response> has a value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearResponse">
+        <div class="location">at line         line 520</div>
+        <code>                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+    <strong>clearResponse</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear <response> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getResponse">
+        <div class="location">at line         line 529</div>
+        <code>                    <a href="../../../google/protobuf/Struct.html"><abbr title="google\protobuf\Struct">Struct</abbr></a>
+    <strong>getResponse</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get <response> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/protobuf/Struct.html"><abbr title="google\protobuf\Struct">Struct</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setResponse">
+        <div class="location">at line         line 539</div>
+        <code>                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+    <strong>setResponse</strong>(<a href="../../../google/protobuf/Struct.html"><abbr title="google\protobuf\Struct">Struct</abbr></a> $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set <response> value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../google/protobuf/Struct.html"><abbr title="google\protobuf\Struct">Struct</abbr></a></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasServiceData">
+        <div class="location">at line         line 548</div>
+        <code>                    boolean
+    <strong>hasServiceData</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if <service_data> has a value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearServiceData">
+        <div class="location">at line         line 557</div>
+        <code>                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+    <strong>clearServiceData</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear <service_data> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getServiceData">
+        <div class="location">at line         line 566</div>
+        <code>                    <a href="../../../google/protobuf/Any.html"><abbr title="google\protobuf\Any">Any</abbr></a>
+    <strong>getServiceData</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get <service_data> value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/protobuf/Any.html"><abbr title="google\protobuf\Any">Any</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setServiceData">
+        <div class="location">at line         line 576</div>
+        <code>                    <a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a>
+    <strong>setServiceData</strong>(<a href="../../../google/protobuf/Any.html"><abbr title="google\protobuf\Any">Any</abbr></a> $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set <service_data> value</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../google/protobuf/Any.html"><abbr title="google\protobuf\Any">Any</abbr></a></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../google/cloud/audit/AuditLog.html"><abbr title="google\cloud\audit\AuditLog">AuditLog</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

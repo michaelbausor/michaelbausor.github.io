@@ -1,0 +1,41 @@
+<h1>Google Cloud Java Pub/Sub Client</h1>
+<p>PHP idiomatic client for <a href="https://cloud.google.com/pubsub/">Google Cloud Pub/Sub</a> services.
+This client supports the following Google Cloud Platform services:</p>
+<ul>
+<li><a href="https://michaelbausor.github.io/master/Google/Cloud/PubSub/V1/PublisherClient.html">Publisher API</a></li>
+<li><a href="https://michaelbausor.github.io/master/Google/Cloud/PubSub/V1/SubscriberClient.html">Subscriber API</a></li>
+</ul>
+<h2>Prerequisites</h2>
+<h2>Installation</h2>
+<h2>Authentication</h2>
+<p>To authenticate all your API calls, first install and setup the <a href="https://cloud.google.com/sdk/">Google Cloud SDK</a>.
+After that is installed, run the following command in your terminal:</p>
+<pre><code>$ gcloud auth login</code></pre>
+<p>At this point, you are now authenticated to make calls to Pub/Sub and other Google Cloud services.</p>
+<h2>Examples</h2>
+<p>The <a href="https://michaelbausor.github.io/master/index.html">documentation</a>
+includes simple examples for every API method. Please read it through for more usage samples.</p>
+<pre><code class="language-php">
+&lt;?php
+
+require __DIR__ . '/vendor/autoload.php';
+
+use Google\Cloud\PubSub\V1\PublisherApi;
+
+try {
+    $publisherApi = new PublisherApi();
+    $formattedName = PublisherApi::formatTopicName("[PROJECT_ID]", "[TOPIC_ID]");
+    $response = $publisherApi-&gt;createTopic($formattedName);
+    echo "Created topic with name " . $response-&gt;getName() . "\n";
+} finally {
+    if (isset($publisherApi)) {
+        $publisherApi-&gt;close();
+    }
+}</code></pre>
+<p>Place the code above in a file alongside your <code>composer.json</code> file, for example
+<code>PubSubSample.php</code></p>
+<h2>Execution</h2>
+<p>To execute your client app from the command line, run the following commands (which assume that
+you put your app in <code>PubSubSample.php</code>):</p>
+<pre><code>php PubSubSample.php</code></pre>
+<h2>Troubleshooting</h2>
