@@ -1,0 +1,7 @@
+{
+    "require": {
+        "sami/sami": "*",
+        "symfony/symfony": "*",
+        "erusev/parsedown": "*"
+    }
+}

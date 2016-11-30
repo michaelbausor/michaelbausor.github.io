@@ -4,8 +4,8 @@ Google Cloud Java Pub/Sub Client
 PHP idiomatic client for [Google Cloud Pub/Sub](https://cloud.google.com/pubsub/) services.
 This client supports the following Google Cloud Platform services:
 
-- [Publisher API](https://michaelbausor.github.io/master/Google/Cloud/PubSub/V1/PublisherClient.html)
-- [Subscriber API](https://michaelbausor.github.io/master/Google/Cloud/PubSub/V1/SubscriberClient.html)
+- [Publisher Client](https://michaelbausor.github.io/master/Google/Cloud/PubSub/V1/PublisherClient.html)
+- [Subscriber Client](https://michaelbausor.github.io/master/Google/Cloud/PubSub/V1/SubscriberClient.html)
 
 Prerequisites
 ----------
@@ -45,16 +45,16 @@ includes simple examples for every API method. Please read it through for more u
 
 require __DIR__ . '/vendor/autoload.php';
 
-use Google\Cloud\PubSub\V1\PublisherApi;
+use Google\Cloud\PubSub\V1\PublisherClient;
 
 try {
-    $publisherApi = new PublisherApi();
-    $formattedName = PublisherApi::formatTopicName("[PROJECT_ID]", "[TOPIC_ID]");
-    $response = $publisherApi->createTopic($formattedName);
+    $publisherClient = new PublisherClient();
+    $formattedName = PublisherClient::formatTopicName("[PROJECT_ID]", "[TOPIC_ID]");
+    $response = $publisherClient->createTopic($formattedName);
     echo "Created topic with name " . $response->getName() . "\n";
 } finally {
-    if (isset($publisherApi)) {
-        $publisherApi->close();
+    if (isset($publisherClient)) {
+        $publisherClient->close();
     }
 }
 ```

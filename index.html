@@ -2,8 +2,8 @@
 <p>PHP idiomatic client for <a href="https://cloud.google.com/pubsub/">Google Cloud Pub/Sub</a> services.
 This client supports the following Google Cloud Platform services:</p>
 <ul>
-<li><a href="https://michaelbausor.github.io/master/Google/Cloud/PubSub/V1/PublisherClient.html">Publisher API</a></li>
-<li><a href="https://michaelbausor.github.io/master/Google/Cloud/PubSub/V1/SubscriberClient.html">Subscriber API</a></li>
+<li><a href="https://michaelbausor.github.io/master/Google/Cloud/PubSub/V1/PublisherClient.html">Publisher Client</a></li>
+<li><a href="https://michaelbausor.github.io/master/Google/Cloud/PubSub/V1/SubscriberClient.html">Subscriber Client</a></li>
 </ul>
 <h2>Prerequisites</h2>
 <ul>
@@ -30,16 +30,16 @@ includes simple examples for every API method. Please read it through for more u
 
 require __DIR__ . '/vendor/autoload.php';
 
-use Google\Cloud\PubSub\V1\PublisherApi;
+use Google\Cloud\PubSub\V1\PublisherClient;
 
 try {
-    $publisherApi = new PublisherApi();
-    $formattedName = PublisherApi::formatTopicName("[PROJECT_ID]", "[TOPIC_ID]");
-    $response = $publisherApi-&gt;createTopic($formattedName);
+    $publisherClient = new PublisherClient();
+    $formattedName = PublisherClient::formatTopicName("[PROJECT_ID]", "[TOPIC_ID]");
+    $response = $publisherClient-&gt;createTopic($formattedName);
     echo "Created topic with name " . $response-&gt;getName() . "\n";
 } finally {
-    if (isset($publisherApi)) {
-        $publisherApi-&gt;close();
+    if (isset($publisherClient)) {
+        $publisherClient-&gt;close();
     }
 }</code></pre>
 <p>Place the code above in a file alongside your <code>composer.json</code> file, for example
