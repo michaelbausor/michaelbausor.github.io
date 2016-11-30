@@ -18,7 +18,7 @@ Installation
 
 - Copy the google-pubsub.zip file to your project directory (do NOT unzip)
 - Copy this [composer.json](https://michaelbausor.github.io/files/composer.json) file to your project directory
-- Install grpc package using pecl by running: `pecl install grpc`
+- Install grpc package using pecl by running: `sudo pecl install grpc`
 - Install required composer packages by running: `composer install`
 
 Authentication
@@ -35,8 +35,7 @@ At this point, you are now authenticated to make calls to Pub/Sub and other Goog
 Examples
 -------------
 
-The [documentation](https://michaelbausor.github.io/master/index.html)
-includes simple examples for every API method. Please read it through for more usage samples.
+The [documentation](https://michaelbausor.github.io/master/index.html) includes simple examples for every API method. Please read it through for more usage samples.
 
 
 ```php
@@ -59,15 +58,13 @@ try {
 }
 ```
 
-Place the code above in a file alongside your `composer.json` file, for example
-`PubSubSample.php`
+Place the code above in a file alongside your `composer.json` file, for example `PubSubSample.php`
 
 
 Execution
 --------------
 
-To execute your client app from the command line, run the following commands (which assume that
-you put your app in `PubSubSample.php`):
+To execute your client app from the command line, run the following commands (which assume that you put your app in `PubSubSample.php`):
 
 ```
 php PubSubSample.php
@@ -75,4 +72,24 @@ php PubSubSample.php
 
 Troubleshooting
 -------------
+
+##### Problems installing gRPC using pecl: #####
+- Error message: `No releases available for package "pecl.php.net/grpc" install failed`
+  - Fix: make sure to run with root access, e.g. `sudo pecl install grpc`
+- Error message: `Cannot find autoconf. Please check your autoconf installation and the $PHP_AUTOCONF environment variable. Then, rerun this script. ERROR: 'phpize' failed`
+  - Fix: Install autoconf, e.g. `brew install autoconf` for Mac
+- Error message: `ERROR: failed to write /usr/lib/php/extensions/no-debug-non-zts-20121212/grpc.so (copy(/usr/lib/php/extensions/no-debug-non-zts-20121212/grpc.so): failed to open stream: Operation not permitted)`
+  - Make sure you have root access. This can also be caused by [System Integrity Protection](https://support.apple.com/en-us/HT204899), which you can disable by following the instructions [here.](http://stackoverflow.com/a/35301947)
+
+##### Problems installing composer: #####
+- Installation using `brew` failed
+  - Fix: run `brew update` and `brew doctor`, fix issues found
+
+##### Problems running the sample: #####
+- Error message: `Fatal error: Uncaught exception 'DomainException' with message 'Could not load the default credentials. Browse to https://developers.google.com/accounts/docs/application-default-credentials for more information'`
+  - Run `google auth application-default login`
+- Segmentation fault running sample
+  - Set the [date.timezone setting](http://php.net/manual/en/datetime.configuration.php#ini.date.timezone) in your php ini file
+- Error message: `Client side authentication failure: Credentials failed to get metadata.`
+  - No resolution yet
 
