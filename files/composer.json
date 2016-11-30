@@ -1,0 +1,11 @@
+{
+    "repositories": [
+        {
+            "type": "artifact",
+            "url": "./"
+        }
+    ],
+    "require": {
+        "google/pubsub": "^0.0.1"
+    }
+}

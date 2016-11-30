@@ -10,9 +10,16 @@ This client supports the following Google Cloud Platform services:
 Prerequisites
 ----------
 
+- [PHP 5.5+](http://php.net/downloads.php)
+- [Composer](https://getcomposer.org/download/)
+
 Installation
 ----------
 
+- Copy the google-pubsub.zip file to your project directory (do NOT unzip)
+- Copy this [composer.json](https://michaelbausor.github.io/files/composer.json) file to your project directory
+- Install grpc package using pecl by running: `pecl install grpc`
+- Install required composer packages by running: `composer install`
 
 Authentication
 --------------
