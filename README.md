@@ -1,4 +1,4 @@
-Google Cloud Java Pub/Sub Client
+Google Cloud PHP Pub/Sub Client
 ================================
 
 PHP idiomatic client for [Google Cloud Pub/Sub](https://cloud.google.com/pubsub/) services.
@@ -18,7 +18,7 @@ Installation
 
 - Copy the google-pubsub.zip file to your project directory (do NOT unzip)
 - Copy this [composer.json](https://michaelbausor.github.io/files/composer.json) file to your project directory
-- Install grpc package using pecl by running: `sudo pecl install grpc`
+- Install grpc package using pecl by running: `sudo pecl install grpc-1.0.0`
 - Install required composer packages by running: `composer install`
 
 Authentication
@@ -96,5 +96,5 @@ Troubleshooting
 - Segmentation fault running sample
   - Set the [date.timezone setting](http://php.net/manual/en/datetime.configuration.php#ini.date.timezone) in your php ini file
 - Error message: `Client side authentication failure: Credentials failed to get metadata.`
-  - No resolution yet
+  - Make sure you have the grpc-1.0.0 package installed, not grpc-1.0.1 (check with `pecl list`)
 
