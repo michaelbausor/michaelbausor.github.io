@@ -32,11 +32,16 @@ $ gcloud auth login
 ```
 At this point, you are now authenticated to make calls to Pub/Sub and other Google Cloud services.
 
+Documentation
+-------------
+
+The documentation is available [here](https://michaelbausor.github.io/master/index.html).
+The two main classes for the PubSub API are [Publisher Client](https://michaelbausor.github.io/master/Google/Cloud/PubSub/V1/PublisherClient.html) and [Subscriber Client](https://michaelbausor.github.io/master/Google/Cloud/PubSub/V1/SubscriberClient.html).
+
 Examples
 -------------
 
 The [documentation](https://michaelbausor.github.io/master/index.html) includes simple examples for every API method. Please read it through for more usage samples.
-
 
 ```php
 

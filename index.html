@@ -24,7 +24,10 @@ After that is installed, run the following command in your terminal:</p>
 <pre><code>$ gcloud auth login
 </code></pre>
 <p>At this point, you are now authenticated to make calls to Pub/Sub and other Google Cloud services.</p>
-<h2><a id="Examples_34"></a>Examples</h2>
+<h2><a id="Documentation_34"></a>Documentation</h2>
+<p>The documentation is available <a href="https://michaelbausor.github.io/master/index.html">here</a>.<br>
+The two main classes for the PubSub API are <a href="https://michaelbausor.github.io/master/Google/Cloud/PubSub/V1/PublisherClient.html">Publisher Client</a> and <a href="https://michaelbausor.github.io/master/Google/Cloud/PubSub/V1/SubscriberClient.html">Subscriber Client</a>.</p>
+<h2><a id="Examples_40"></a>Examples</h2>
 <p>The <a href="https://michaelbausor.github.io/master/index.html">documentation</a> includes simple examples for every API method. Please read it through for more usage samples.</p>
 <pre><code class="language-php">
 <span class="hljs-preprocessor">&lt;?php</span>
@@ -45,12 +48,12 @@ After that is installed, run the following command in your terminal:</p>
 }
 </code></pre>
 <p>Place the code above in a file alongside your <code>composer.json</code> file, for example <code>PubSubSample.php</code></p>
-<h2><a id="Execution_63"></a>Execution</h2>
+<h2><a id="Execution_68"></a>Execution</h2>
 <p>To execute your client app from the command line, run the following commands (which assume that you put your app in <code>PubSubSample.php</code>):</p>
 <pre><code>php PubSubSample.php
 </code></pre>
-<h2><a id="Troubleshooting_72"></a>Troubleshooting</h2>
-<h5><a id="Problems_installing_gRPC_using_pecl_75"></a>Problems installing gRPC using pecl:</h5>
+<h2><a id="Troubleshooting_77"></a>Troubleshooting</h2>
+<h5><a id="Problems_installing_gRPC_using_pecl_80"></a>Problems installing gRPC using pecl:</h5>
 <ul>
 <li>Error message: <code>No releases available for package &quot;pecl.php.net/grpc&quot; install failed</code>
 <ul>
@@ -68,7 +71,7 @@ After that is installed, run the following command in your terminal:</p>
 </ul>
 </li>
 </ul>
-<h5><a id="Problems_installing_composer_83"></a>Problems installing composer:</h5>
+<h5><a id="Problems_installing_composer_88"></a>Problems installing composer:</h5>
 <ul>
 <li>Installation using <code>brew</code> failed
 <ul>
@@ -76,7 +79,7 @@ After that is installed, run the following command in your terminal:</p>
 </ul>
 </li>
 </ul>
-<h5><a id="Problems_running_the_sample_87"></a>Problems running the sample:</h5>
+<h5><a id="Problems_running_the_sample_92"></a>Problems running the sample:</h5>
 <ul>
 <li>Error message: <code>Fatal error: Uncaught exception 'DomainException' with message 'Could not load the default credentials. Browse to https://developers.google.com/accounts/docs/application-default-credentials for more information'</code>
 <ul>
