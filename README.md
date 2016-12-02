@@ -89,7 +89,7 @@ To execute your client app from the command line, run the following commands (wh
 $ php PubSubSample.php
 ```
 
-Pecl [Pecl]
+Pecl
 ----
 
 If you have not used pecl to install PHP extensions before, you may encounter some issues the first time you install and use it. Please see below for help installing and troubleshooting pecl.
