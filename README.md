@@ -28,7 +28,7 @@ To authenticate all your API calls, first install and setup the [Google Cloud SD
 After that is installed, run the following command in your terminal:
 
 ```
-$ gcloud auth login
+$ gcloud auth application-default login
 ```
 At this point, you are now authenticated to make calls to Pub/Sub and other Google Cloud services.
 
