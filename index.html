@@ -9,25 +9,51 @@ This client supports the following Google Cloud Platform services:</p>
 <h2><a id="Prerequisites_9"></a>Prerequisites</h2>
 <ul>
 <li><a href="http://php.net/downloads.php">PHP 5.5+</a></li>
-<li><a href="https://getcomposer.org/download/">Composer</a></li>
+<li><a href="https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx">Composer</a></li>
+<li>Pecl (see the section on how to install Pecl)</li>
 </ul>
-<h2><a id="Installation_15"></a>Installation</h2>
+<h2><a id="Installation_16"></a>Installation</h2>
 <ul>
 <li>Copy the google-pubsub.zip file to your project directory (do NOT unzip)</li>
 <li>Copy this <a href="https://michaelbausor.github.io/files/composer.json">composer.json</a> file to your project directory</li>
-<li>Install grpc package using pecl by running: <code>sudo pecl install grpc-1.0.0</code></li>
-<li>Install required composer packages by running: <code>composer install</code></li>
+<li>Install grpc package using pecl
+<ul>
+<li>Run this command in your terminal:</li>
 </ul>
-<h2><a id="Authentication_23"></a>Authentication</h2>
+</li>
+</ul>
+<pre><code>$ sudo pecl install grpc-1.0.0
+</code></pre>
+<ul>
+<li>Add <code>extension=grpc.so</code> to your php.ini file if pecl was not able to do so<br>
+automatically. See <a href="#Pecl">here</a> for more detailed instructions</li>
+<li>Install the required packages using composer, with the following commands<br>
+depending on how you have install composer:
+<ul>
+<li>Installed composer locally:</li>
+</ul>
+</li>
+</ul>
+<pre><code>$ php composer.phar install
+</code></pre>
+<ul>
+<li>Installed composer globally:</li>
+</ul>
+<pre><code>$ composer install
+</code></pre>
+<h2><a id="Authentication_39"></a>Authentication</h2>
 <p>To authenticate all your API calls, first install and setup the <a href="https://cloud.google.com/sdk/">Google Cloud SDK</a>.<br>
 After that is installed, run the following command in your terminal:</p>
 <pre><code>$ gcloud auth application-default login
 </code></pre>
+<p>NOTE: if you are using an older version of the Google Cloud SDK, you may need to use the following command instead:</p>
+<pre><code>$ gcloud beta auth application-default login
+</code></pre>
 <p>At this point, you are now authenticated to make calls to Pub/Sub and other Google Cloud services.</p>
-<h2><a id="Documentation_34"></a>Documentation</h2>
+<h2><a id="Documentation_57"></a>Documentation</h2>
 <p>The documentation is available <a href="https://michaelbausor.github.io/master/index.html">here</a>.<br>
 The two main classes for the PubSub API are <a href="https://michaelbausor.github.io/master/Google/Cloud/PubSub/V1/PublisherClient.html">Publisher Client</a> and <a href="https://michaelbausor.github.io/master/Google/Cloud/PubSub/V1/SubscriberClient.html">Subscriber Client</a>.</p>
-<h2><a id="Examples_40"></a>Examples</h2>
+<h2><a id="Examples_63"></a>Examples</h2>
 <p>The <a href="https://michaelbausor.github.io/master/index.html">documentation</a> includes simple examples for every API method. Please read it through for more usage samples.</p>
 <pre><code class="language-php">
 <span class="hljs-preprocessor">&lt;?php</span>
@@ -48,21 +74,59 @@ The two main classes for the PubSub API are <a href="https://michaelbausor.githu
 }
 </code></pre>
 <p>Place the code above in a file alongside your <code>composer.json</code> file, for example <code>PubSubSample.php</code></p>
-<h2><a id="Execution_68"></a>Execution</h2>
+<h2><a id="Execution_91"></a>Execution</h2>
 <p>To execute your client app from the command line, run the following commands (which assume that you put your app in <code>PubSubSample.php</code>):</p>
-<pre><code>php PubSubSample.php
+<pre><code>$ php PubSubSample.php
 </code></pre>
-<h2><a id="Troubleshooting_77"></a>Troubleshooting</h2>
-<h5><a id="Problems_installing_gRPC_using_pecl_80"></a>Problems installing gRPC using pecl:</h5>
+<h2><a id="Pecl_Pecl_100"></a>Pecl [Pecl]</h2>
+<p>If you have not used pecl to install PHP extensions before, you may encounter some issues the first time you install and use it. Please see below for help installing and troubleshooting pecl.</p>
+<h5><a id="Installing_pecl_105"></a>Installing pecl</h5>
+<p>Pecl is provided along with Pear. The instructions for installing Pear are <a href="http://pear.php.net/manual/en/installation.getting.php">available here</a>.</p>
+<p>If you are using OS X El Capitan, an easy installation method is given by <a href="http://stackoverflow.com/a/34954209">this Stack Overflow answer</a>.</p>
+<p>You can verify that Pecl is available by running <code>pecl version</code>, or by following the instructions provided <a href="http://pear.php.net/manual/en/installation.checking.php">here</a>.</p>
+<h5><a id="Installing_the_gRPC_Extension_113"></a>Installing the gRPC Extension</h5>
+<p>There are two steps to install the gRPC extension:</p>
+<ol>
+<li>Build the extension using Pecl, and</li>
+<li>Add the extension to your php.ini file.</li>
+</ol>
+<h6><a id="Build_the_extension_119"></a>Build the extension</h6>
+<p>You can build the extension by running this command in your terminal:</p>
+<pre><code>$ sudo pecl install grpc-1.0.0
+</code></pre>
+<p>If you have not used Pecl to build a PHP extension before, you may encounter<br>
+some problems. Please see the prerequisites and troubleshooting list below:</p>
+<p>Prerequisite for OSX: accept the xcode license agreement.</p>
+<ul>
+<li>If you have not done so, you will get an error like: <code>ERROR: 'phpize' failed</code>.</li>
+<li>You can accept the license agreement by using one of the command line tools, e.g. by running:</li>
+</ul>
+<pre><code>m4 --version
+</code></pre>
+<p>Prerequisite for OSX: disable <a href="https://support.apple.com/en-us/HT204899">System Integrity Protection</a></p>
+<ul>
+<li>If SIP is enabled, pecl will be unable to install the <a href="http://grpc.so">grpc.so</a> file at the end of the build process (you will see the <code>ERROR: failed to write ...</code> error message listed in the Troubleshooting section below.</li>
+<li>To disable SIP, follow the instructions <a href="http://stackoverflow.com/a/35301947">here.</a></li>
+</ul>
+<p>Troubleshooting:</p>
 <ul>
 <li>Error message: <code>No releases available for package &quot;pecl.php.net/grpc&quot; install failed</code>
 <ul>
-<li>Fix: make sure to run with root access, e.g. <code>sudo pecl install grpc</code></li>
+<li>Fix: Make sure to run with root access, e.g.</li>
 </ul>
 </li>
+</ul>
+<pre><code>sudo pecl install grpc
+</code></pre>
+<ul>
 <li>Error message: <code>Cannot find autoconf. Please check your autoconf installation and the $PHP_AUTOCONF environment variable. Then, rerun this script. ERROR: 'phpize' failed</code>
 <ul>
-<li>Fix: Install autoconf, e.g. <code>brew install autoconf</code> for Mac</li>
+<li>Fix: You need to install autoconf.
+<ul>
+<li>On MacOS or OSX you can install autoconf using brew with the command <code>$ brew install autoconf</code> or by following <a href="http://superuser.com/a/897316">these instructions</a>.</li>
+<li>On Ubuntu, install with <code>$ sudo apt-get install autoconf</code></li>
+</ul>
+</li>
 </ul>
 </li>
 <li>Error message: <code>ERROR: failed to write /usr/lib/php/extensions/no-debug-non-zts-20121212/grpc.so (copy(/usr/lib/php/extensions/no-debug-non-zts-20121212/grpc.so): failed to open stream: Operation not permitted)</code>
@@ -71,29 +135,49 @@ The two main classes for the PubSub API are <a href="https://michaelbausor.githu
 </ul>
 </li>
 </ul>
-<h5><a id="Problems_installing_composer_88"></a>Problems installing composer:</h5>
+<h6><a id="Add_the_extension_to_you_PHP_ini_file_153"></a>Add the extension to you PHP ini file</h6>
+<p>After the grpc extension has been build with pecl, you need to add it to your PHP ini file. If the Pear <code>php_ini</code> setting is configured correctly, this will happen automatically, and the pecl installation will print <code>Extension grpc enabled in php.ini</code>. Otherwise, you will need manually modify your php ini file, by following these steps:</p>
+<ol>
+<li>Locate your PHP ini file by running <code>php --ini</code> from the terminal. You should see a line like: <code>Loaded Configuration File: /etc/php5/cli/php.ini</code></li>
+<li>Edit the file using a text editor. Note you will likely require root access to edit the file. So for example using vi, run:<br>
+<code>sudo vi /etc/php5/cli/php.ini</code></li>
+<li>Add the following line anywhere in the file: <code>extension=grpc.so</code></li>
+</ol>
+<p>If the grpc extension is not installed or has not been added to your PHP ini file, you will see an error message like:<br>
+<code>Fatal error: Undefined constant 'Grpc\STATUS_ABORTED' in /Users/USERNAME/PROJECT/vendor/google/gax/src/GrpcConstants.php on line 53</code><br>
+This indicates that you need to follow the steps above to correctly install the gRPC extension and add it to your PHP ini file.</p>
+<h2><a id="Troubleshooting_166"></a>Troubleshooting</h2>
+<h5><a id="Problems_running_the_sample_169"></a>Problems running the sample:</h5>
 <ul>
-<li>Installation using <code>brew</code> failed
+<li>Error message: <code>Fatal error: Uncaught exception 'DomainException' with message 'Could not load the default credentials.'</code>
 <ul>
-<li>Fix: run <code>brew update</code> and <code>brew doctor</code>, fix issues found</li>
+<li>This indicates that the application-default credentials are not available.<br>
+You need to make sure that the Google Cloud SDK is installed, and run <code>$ google auth application-default login</code><br>
+(or <code>$ google beta auth application-default login</code> for older versions of the SDK)</li>
 </ul>
 </li>
-</ul>
-<h5><a id="Problems_running_the_sample_92"></a>Problems running the sample:</h5>
+<li>Error message: <code>Segment Fault 11</code>
 <ul>
-<li>Error message: <code>Fatal error: Uncaught exception 'DomainException' with message 'Could not load the default credentials. Browse to https://developers.google.com/accounts/docs/application-default-credentials for more information'</code>
+<li>This can be caused if the <a href="http://php.net/manual/en/datetime.configuration.php#ini.date.timezone">date.timezone setting</a> in your php ini file is not set. You can set it by following these steps:
 <ul>
-<li>Run <code>google auth application-default login</code></li>
+<li>Locate your PHP ini file using <code>$ php --ini</code></li>
+<li>Edit the file and append the following line: <code>date.timezone = America/Los_Angeles</code></li>
+<li>(You can use any <a href="http://php.net/manual/en/timezones.php">supported timezone</a>)</li>
 </ul>
 </li>
-<li>Segmentation fault running sample
-<ul>
-<li>Set the <a href="http://php.net/manual/en/datetime.configuration.php#ini.date.timezone">date.timezone setting</a> in your php ini file</li>
 </ul>
 </li>
 <li>Error message: <code>Client side authentication failure: Credentials failed to get metadata.</code>
 <ul>
-<li>Make sure you have the grpc-1.0.0 package installed, not grpc-1.0.1 (check with <code>pecl list</code>)</li>
+<li>Make sure you have the grpc-1.0.0 package installed, not grpc-1.0.1 (check with <code>$ pecl list</code>)</li>
+</ul>
+</li>
+</ul>
+<h5><a id="Problems_installing_composer_182"></a>Problems installing composer:</h5>
+<ul>
+<li>Installation using <code>brew</code> failed
+<ul>
+<li>Fix: run <code>$ brew update</code> and <code>$ brew doctor</code>, and fix any issues found</li>
 </ul>
 </li>
 </ul>
