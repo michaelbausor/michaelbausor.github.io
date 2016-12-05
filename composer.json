@@ -1,7 +1,15 @@
 {
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/michaelbausor/Sami"
+        }
+    ],
     "require": {
-        "sami/sami": "*",
+        "sami/sami": "dev-fix-search-link",
         "symfony/symfony": "*",
         "erusev/parsedown": "*"
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
