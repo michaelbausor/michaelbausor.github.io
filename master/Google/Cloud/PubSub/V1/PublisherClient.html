@@ -649,7 +649,7 @@ try {
             </div>
                     <div class="method-item">
                     <h3 id="method_publish">
-        <div class="location">at line         line 407</div>
+        <div class="location">at line         line 408</div>
         <code>                    <a href="../../../../google/pubsub/v1/PublishResponse.html"><abbr title="google\pubsub\v1\PublishResponse">PublishResponse</abbr></a>
     <strong>publish</strong>(string $topic, <a href="../../../../google/pubsub/v1/PubsubMessage.html"><abbr title="google\pubsub\v1\PubsubMessage">PubsubMessage</abbr></a>[] $messages, array $optionalArgs = array())
         </code>
@@ -684,7 +684,8 @@ try {
                     <tr>
                 <td>string</td>
                 <td>$topic</td>
-                <td>The messages in the request will be published on this topic.</td>
+                <td>The messages in the request will be published on this topic.
+                                     Format is <code>projects/{project}/topics/{topic}</code>.</td>
             </tr>
                     <tr>
                 <td><a href="../../../../google/pubsub/v1/PubsubMessage.html"><abbr title="google\pubsub\v1\PubsubMessage">PubsubMessage</abbr></a>[]</td>
@@ -736,7 +737,7 @@ try {
             </div>
                     <div class="method-item">
                     <h3 id="method_getTopic">
-        <div class="location">at line         line 463</div>
+        <div class="location">at line         line 465</div>
         <code>                    <a href="../../../../google/pubsub/v1/Topic.html"><abbr title="google\pubsub\v1\Topic">Topic</abbr></a>
     <strong>getTopic</strong>(string $topic, array $optionalArgs = array())
         </code>
@@ -765,7 +766,8 @@ try {
                     <tr>
                 <td>string</td>
                 <td>$topic</td>
-                <td>The name of the topic to get.</td>
+                <td>The name of the topic to get.
+                            Format is <code>projects/{project}/topics/{topic}</code>.</td>
             </tr>
                     <tr>
                 <td>array</td>
@@ -812,7 +814,7 @@ try {
             </div>
                     <div class="method-item">
                     <h3 id="method_listTopics">
-        <div class="location">at line         line 527</div>
+        <div class="location">at line         line 530</div>
         <code>                    <a href="../../../../Google/GAX/PagedListResponse.html"><abbr title="Google\GAX\PagedListResponse">PagedListResponse</abbr></a>
     <strong>listTopics</strong>(string $project, array $optionalArgs = array())
         </code>
@@ -827,7 +829,7 @@ try {
 try {
     $publisherClient = new PublisherClient();
     $formattedProject = PublisherClient::formatProjectName("[PROJECT]");
-    foreach ($publisherClient->listTopics($formattedProject) as $element) {
+    foreach ($publisherClient->listTopics($formattedProject)->iterateAllElements() as $element) {
         // doThingsWith(element);
     }
 } finally {
@@ -843,7 +845,8 @@ try {
                     <tr>
                 <td>string</td>
                 <td>$project</td>
-                <td>The name of the cloud project that topics belong to.</td>
+                <td>The name of the cloud project that topics belong to.
+                            Format is <code>projects/{project}</code>.</td>
             </tr>
                     <tr>
                 <td>array</td>
@@ -899,7 +902,7 @@ try {
             </div>
                     <div class="method-item">
                     <h3 id="method_listTopicSubscriptions">
-        <div class="location">at line         line 597</div>
+        <div class="location">at line         line 601</div>
         <code>                    <a href="../../../../Google/GAX/PagedListResponse.html"><abbr title="Google\GAX\PagedListResponse">PagedListResponse</abbr></a>
     <strong>listTopicSubscriptions</strong>(string $topic, array $optionalArgs = array())
         </code>
@@ -914,7 +917,7 @@ try {
 try {
     $publisherClient = new PublisherClient();
     $formattedTopic = PublisherClient::formatTopicName("[PROJECT]", "[TOPIC]");
-    foreach ($publisherClient->listTopicSubscriptions($formattedTopic) as $element) {
+    foreach ($publisherClient->listTopicSubscriptions($formattedTopic)->iterateAllElements() as $element) {
         // doThingsWith(element);
     }
 } finally {
@@ -930,7 +933,8 @@ try {
                     <tr>
                 <td>string</td>
                 <td>$topic</td>
-                <td>The name of the topic that subscriptions are attached to.</td>
+                <td>The name of the topic that subscriptions are attached to.
+                            Format is <code>projects/{project}/topics/{topic}</code>.</td>
             </tr>
                     <tr>
                 <td>array</td>
@@ -986,7 +990,7 @@ try {
             </div>
                     <div class="method-item">
                     <h3 id="method_deleteTopic">
-        <div class="location">at line         line 658</div>
+        <div class="location">at line         line 663</div>
         <code>                    
     <strong>deleteTopic</strong>(string $topic, array $optionalArgs = array())
         </code>
@@ -1019,7 +1023,8 @@ try {
                     <tr>
                 <td>string</td>
                 <td>$topic</td>
-                <td>Name of the topic to delete.</td>
+                <td>Name of the topic to delete.
+                            Format is <code>projects/{project}/topics/{topic}</code>.</td>
             </tr>
                     <tr>
                 <td>array</td>
@@ -1057,7 +1062,7 @@ try {
             </div>
                     <div class="method-item">
                     <h3 id="method_setIamPolicy">
-        <div class="location">at line         line 719</div>
+        <div class="location">at line         line 724</div>
         <code>                    <a href="../../../../google/iam/v1/Policy.html"><abbr title="google\iam\v1\Policy">Policy</abbr></a>
     <strong>setIamPolicy</strong>(string $resource, <a href="../../../../google/iam/v1/Policy.html"><abbr title="google\iam\v1\Policy">Policy</abbr></a> $policy, array $optionalArgs = array())
         </code>
@@ -1145,7 +1150,7 @@ try {
             </div>
                     <div class="method-item">
                     <h3 id="method_getIamPolicy">
-        <div class="location">at line         line 777</div>
+        <div class="location">at line         line 782</div>
         <code>                    <a href="../../../../google/iam/v1/Policy.html"><abbr title="google\iam\v1\Policy">Policy</abbr></a>
     <strong>getIamPolicy</strong>(string $resource, array $optionalArgs = array())
         </code>
@@ -1226,7 +1231,7 @@ try {
             </div>
                     <div class="method-item">
                     <h3 id="method_testIamPermissions">
-        <div class="location">at line         line 837</div>
+        <div class="location">at line         line 844</div>
         <code>                    <a href="../../../../google/iam/v1/TestIamPermissionsResponse.html"><abbr title="google\iam\v1\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a>
     <strong>testIamPermissions</strong>(string $resource, string[] $permissions, array $optionalArgs = array())
         </code>
@@ -1236,7 +1241,10 @@ try {
     
 
                     <div class="method-description">
-                                    <p>Returns permissions that a caller has on the specified resource.</p>                    <p>Sample code:
+                                    <p>Returns permissions that a caller has on the specified resource.</p>                    <p>If the resource does not exist, this will return an empty set of
+permissions, not a NOT_FOUND error.</p>
+
+<p>Sample code:
 <pre><code>
 try {
     $publisherClient = new PublisherClient();
@@ -1313,7 +1321,7 @@ try {
             </div>
                     <div class="method-item">
                     <h3 id="method_close">
-        <div class="location">at line         line 865</div>
+        <div class="location">at line         line 872</div>
         <code>                    
     <strong>close</strong>()
         </code>

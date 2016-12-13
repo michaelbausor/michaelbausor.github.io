@@ -906,11 +906,11 @@ does not exist. After a topic is deleted, a new topic may be created with
 the same name; this is an entirely new topic with none of the old
 configuration or subscriptions. Existing subscriptions to this topic are
 not deleted, but their <code>topic</code> field is set to <code>_deleted-topic_</code>.</dd><dt><a href="Google/Cloud/PubSub/V1/SubscriberClient.html#method_deleteSubscription"><abbr title="Google\Cloud\PubSub\V1\SubscriberClient">SubscriberClient</abbr>::deleteSubscription</a>() &mdash; <em>Method in class <a href="Google/Cloud/PubSub/V1/SubscriberClient.html"><abbr title="Google\Cloud\PubSub\V1\SubscriberClient">SubscriberClient</abbr></a></em></dt>
-                    <dd>Deletes an existing subscription. All pending messages in the subscription
+                    <dd>Deletes an existing subscription. All messages retained in the subscription
 are immediately dropped. Calls to <code>Pull</code> after deletion will return
 <code>NOT_FOUND</code>. After a subscription is deleted, a new one may be created with
 the same name, but the new one has no association with the old
-subscription, or its topic unless the same topic is specified.</dd><dt>$<a href="Google/GAX/Jison/Parser.html#property_defaultActions"><abbr title="Google\GAX\Jison\Parser">Parser</abbr></a> &mdash; <em>Property in class <a href="Google/GAX/Jison/Parser.html"><abbr title="Google\GAX\Jison\Parser">Parser</abbr></a></em></dt>
+subscription or its topic unless the same topic is specified.</dd><dt>$<a href="Google/GAX/Jison/Parser.html#property_defaultActions"><abbr title="Google\GAX\Jison\Parser">Parser</abbr></a> &mdash; <em>Property in class <a href="Google/GAX/Jison/Parser.html"><abbr title="Google\GAX\Jison\Parser">Parser</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Google/GAX/Jison/Parser.html#property_debug"><abbr title="Google\GAX\Jison\Parser">Parser</abbr></a> &mdash; <em>Property in class <a href="Google/GAX/Jison/Parser.html"><abbr title="Google\GAX\Jison\Parser">Parser</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="Google/GAX/Jison/Parser.html#property_done"><abbr title="Google\GAX\Jison\Parser">Parser</abbr></a> &mdash; <em>Property in class <a href="Google/GAX/Jison/Parser.html"><abbr title="Google\GAX\Jison\Parser">Parser</abbr></a></em></dt>
                     <dd></dd><dt>$<a href="google/api/Advice.html#property_description"><abbr title="google\api\Advice">Advice</abbr></a> &mdash; <em>Property in class <a href="google/api/Advice.html"><abbr title="google\api\Advice">Advice</abbr></a></em></dt>

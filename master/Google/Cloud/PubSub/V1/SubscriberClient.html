@@ -298,11 +298,11 @@ represents a topic resource.</p>                </div>
                 <div class="col-md-8 type">
                     <a href="#method_deleteSubscription">deleteSubscription</a>(string $subscription, array $optionalArgs = array())
         
-                                            <p>Deletes an existing subscription. All pending messages in the subscription
+                                            <p>Deletes an existing subscription. All messages retained in the subscription
 are immediately dropped. Calls to <code>Pull</code> after deletion will return
 <code>NOT_FOUND</code>. After a subscription is deleted, a new one may be created with
 the same name, but the new one has no association with the old
-subscription, or its topic unless the same topic is specified.</p>                </div>
+subscription or its topic unless the same topic is specified.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -730,7 +730,7 @@ represents a topic resource.</p>                                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_createSubscription">
-        <div class="location">at line         line 418</div>
+        <div class="location">at line         line 422</div>
         <code>                    <a href="../../../../google/pubsub/v1/Subscription.html"><abbr title="google\pubsub\v1\Subscription">Subscription</abbr></a>
     <strong>createSubscription</strong>(string $name, string $topic, array $optionalArgs = array())
         </code>
@@ -744,8 +744,11 @@ represents a topic resource.</p>                                </div>
 If the corresponding topic doesn't exist, returns <code>NOT_FOUND</code>.</p>
 
 <p>If the name is not provided in the request, the server will assign a random
-name for this subscription on the same project as the topic. Note that
-for REST API requests, you must specify a name.</p>
+name for this subscription on the same project as the topic, conforming
+to the
+<a href="https://cloud.google.com/pubsub/docs/overview#names">resource name format</a>.
+The generated name is populated in the returned Subscription object.
+Note that for REST API requests, you must specify a name in the request.</p>
 
 <p>Sample code:
 <pre><code>
@@ -778,6 +781,7 @@ try {
                 <td>string</td>
                 <td>$topic</td>
                 <td>The name of the topic from which this subscription is receiving messages.
+                            Format is <code>projects/{project}/topics/{topic}</code>.
                             The value of this field will be <code>_deleted-topic_</code> if the topic has been
                             deleted.</td>
             </tr>
@@ -802,15 +806,15 @@ try {
      deadline. To override this value for a given message, call
      `ModifyAckDeadline` with the corresponding `ack_id` if using
      pull.
+     The minimum custom deadline you can specify is 10 seconds.
      The maximum custom deadline you can specify is 600 seconds (10 minutes).
+     If this parameter is 0, a default value of 10 seconds is used.
 
      For push delivery, this value is also used to set the request timeout for
      the call to the push endpoint.
 
      If the subscriber never acknowledges the message, the Pub/Sub
      system will eventually redeliver the message.
-
-     If this parameter is 0, a default value of 10 seconds is used.
 @type \Google\GAX\RetrySettings $retrySettings
      Retry settings to use for this call. If present, then
      $timeoutMillis is ignored.
@@ -850,7 +854,7 @@ try {
             </div>
                     <div class="method-item">
                     <h3 id="method_getSubscription">
-        <div class="location">at line         line 478</div>
+        <div class="location">at line         line 483</div>
         <code>                    <a href="../../../../google/pubsub/v1/Subscription.html"><abbr title="google\pubsub\v1\Subscription">Subscription</abbr></a>
     <strong>getSubscription</strong>(string $subscription, array $optionalArgs = array())
         </code>
@@ -879,7 +883,8 @@ try {
                     <tr>
                 <td>string</td>
                 <td>$subscription</td>
-                <td>The name of the subscription to get.</td>
+                <td>The name of the subscription to get.
+                            Format is <code>projects/{project}/subscriptions/{sub}</code>.</td>
             </tr>
                     <tr>
                 <td>array</td>
@@ -926,7 +931,7 @@ try {
             </div>
                     <div class="method-item">
                     <h3 id="method_listSubscriptions">
-        <div class="location">at line         line 542</div>
+        <div class="location">at line         line 548</div>
         <code>                    <a href="../../../../Google/GAX/PagedListResponse.html"><abbr title="Google\GAX\PagedListResponse">PagedListResponse</abbr></a>
     <strong>listSubscriptions</strong>(string $project, array $optionalArgs = array())
         </code>
@@ -941,7 +946,7 @@ try {
 try {
     $subscriberClient = new SubscriberClient();
     $formattedProject = SubscriberClient::formatProjectName("[PROJECT]");
-    foreach ($subscriberClient->listSubscriptions($formattedProject) as $element) {
+    foreach ($subscriberClient->listSubscriptions($formattedProject)->iterateAllElements() as $element) {
         // doThingsWith(element);
     }
 } finally {
@@ -957,7 +962,8 @@ try {
                     <tr>
                 <td>string</td>
                 <td>$project</td>
-                <td>The name of the cloud project that subscriptions belong to.</td>
+                <td>The name of the cloud project that subscriptions belong to.
+                            Format is <code>projects/{project}</code>.</td>
             </tr>
                     <tr>
                 <td>array</td>
@@ -1013,7 +1019,7 @@ try {
             </div>
                     <div class="method-item">
                     <h3 id="method_deleteSubscription">
-        <div class="location">at line         line 603</div>
+        <div class="location">at line         line 610</div>
         <code>                    
     <strong>deleteSubscription</strong>(string $subscription, array $optionalArgs = array())
         </code>
@@ -1023,11 +1029,11 @@ try {
     
 
                     <div class="method-description">
-                                    <p>Deletes an existing subscription. All pending messages in the subscription
+                                    <p>Deletes an existing subscription. All messages retained in the subscription
 are immediately dropped. Calls to <code>Pull</code> after deletion will return
 <code>NOT_FOUND</code>. After a subscription is deleted, a new one may be created with
 the same name, but the new one has no association with the old
-subscription, or its topic unless the same topic is specified.</p>                    <p>Sample code:
+subscription or its topic unless the same topic is specified.</p>                    <p>Sample code:
 <pre><code>
 try {
     $subscriberClient = new SubscriberClient();
@@ -1046,7 +1052,8 @@ try {
                     <tr>
                 <td>string</td>
                 <td>$subscription</td>
-                <td>The subscription to delete.</td>
+                <td>The subscription to delete.
+                            Format is <code>projects/{project}/subscriptions/{sub}</code>.</td>
             </tr>
                     <tr>
                 <td>array</td>
@@ -1084,7 +1091,7 @@ try {
             </div>
                     <div class="method-item">
                     <h3 id="method_modifyAckDeadline">
-        <div class="location">at line         line 666</div>
+        <div class="location">at line         line 676</div>
         <code>                    
     <strong>modifyAckDeadline</strong>(string $subscription, string[] $ackIds, int $ackDeadlineSeconds, array $optionalArgs = array())
         </code>
@@ -1119,7 +1126,8 @@ try {
                     <tr>
                 <td>string</td>
                 <td>$subscription</td>
-                <td>The name of the subscription.</td>
+                <td>The name of the subscription.
+                                    Format is <code>projects/{project}/subscriptions/{sub}</code>.</td>
             </tr>
                     <tr>
                 <td>string[]</td>
@@ -1130,10 +1138,12 @@ try {
                 <td>int</td>
                 <td>$ackDeadlineSeconds</td>
                 <td>The new ack deadline with respect to the time this request was sent to
-                                    the Pub/Sub system. Must be >= 0. For example, if the value is 10, the new
+                                    the Pub/Sub system. For example, if the value is 10, the new
                                     ack deadline will expire 10 seconds after the <code>ModifyAckDeadline</code> call
                                     was made. Specifying zero may immediately make the message available for
-                                    another pull request.</td>
+                                    another pull request.
+                                    The minimum deadline you can specify is 0 seconds.
+                                    The maximum deadline you can specify is 600 seconds (10 minutes).</td>
             </tr>
                     <tr>
                 <td>array</td>
@@ -1171,7 +1181,7 @@ try {
             </div>
                     <div class="method-item">
                     <h3 id="method_acknowledge">
-        <div class="location">at line         line 730</div>
+        <div class="location">at line         line 741</div>
         <code>                    
     <strong>acknowledge</strong>(string $subscription, string[] $ackIds, array $optionalArgs = array())
         </code>
@@ -1207,7 +1217,8 @@ try {
                     <tr>
                 <td>string</td>
                 <td>$subscription</td>
-                <td>The subscription whose message is being acknowledged.</td>
+                <td>The subscription whose message is being acknowledged.
+                              Format is <code>projects/{project}/subscriptions/{sub}</code>.</td>
             </tr>
                     <tr>
                 <td>string[]</td>
@@ -1251,7 +1262,7 @@ try {
             </div>
                     <div class="method-item">
                     <h3 id="method_pull">
-        <div class="location">at line         line 798</div>
+        <div class="location">at line         line 811</div>
         <code>                    <a href="../../../../google/pubsub/v1/PullResponse.html"><abbr title="google\pubsub\v1\PullResponse">PullResponse</abbr></a>
     <strong>pull</strong>(string $subscription, int $maxMessages, array $optionalArgs = array())
         </code>
@@ -1284,7 +1295,8 @@ try {
                     <tr>
                 <td>string</td>
                 <td>$subscription</td>
-                <td>The subscription from which messages should be pulled.</td>
+                <td>The subscription from which messages should be pulled.
+                            Format is <code>projects/{project}/subscriptions/{sub}</code>.</td>
             </tr>
                     <tr>
                 <td>int</td>
@@ -1299,11 +1311,12 @@ try {
                             Optional.</p>
 
 <pre><code>@type bool $returnImmediately
-     If this is specified as true the system will respond immediately even if
-     it is not able to return a message in the `Pull` response. Otherwise the
-     system is allowed to wait until at least one message is available rather
-     than returning no messages. The client may cancel the request if it does
-     not wish to wait any longer for the response.
+     If this field set to true, the system will respond immediately even if
+     it there are no messages available to return in the `Pull` response.
+     Otherwise, the system may wait (for a bounded amount of time) until at
+     least one message is available, rather than returning no messages. The
+     client may cancel the request if it does not wish to wait any longer for
+     the response.
 @type \Google\GAX\RetrySettings $retrySettings
      Retry settings to use for this call. If present, then
      $timeoutMillis is ignored.
@@ -1343,7 +1356,7 @@ try {
             </div>
                     <div class="method-item">
                     <h3 id="method_modifyPushConfig">
-        <div class="location">at line         line 865</div>
+        <div class="location">at line         line 879</div>
         <code>                    
     <strong>modifyPushConfig</strong>(string $subscription, <a href="../../../../google/pubsub/v1/PushConfig.html"><abbr title="google\pubsub\v1\PushConfig">PushConfig</abbr></a> $pushConfig, array $optionalArgs = array())
         </code>
@@ -1378,7 +1391,8 @@ try {
                     <tr>
                 <td>string</td>
                 <td>$subscription</td>
-                <td>The name of the subscription.</td>
+                <td>The name of the subscription.
+                                Format is <code>projects/{project}/subscriptions/{sub}</code>.</td>
             </tr>
                     <tr>
                 <td><a href="../../../../google/pubsub/v1/PushConfig.html"><abbr title="google\pubsub\v1\PushConfig">PushConfig</abbr></a></td>
@@ -1426,7 +1440,7 @@ the subscription if <code>Pull</code> is not called.</td>
             </div>
                     <div class="method-item">
                     <h3 id="method_setIamPolicy">
-        <div class="location">at line         line 927</div>
+        <div class="location">at line         line 941</div>
         <code>                    <a href="../../../../google/iam/v1/Policy.html"><abbr title="google\iam\v1\Policy">Policy</abbr></a>
     <strong>setIamPolicy</strong>(string $resource, <a href="../../../../google/iam/v1/Policy.html"><abbr title="google\iam\v1\Policy">Policy</abbr></a> $policy, array $optionalArgs = array())
         </code>
@@ -1514,7 +1528,7 @@ try {
             </div>
                     <div class="method-item">
                     <h3 id="method_getIamPolicy">
-        <div class="location">at line         line 985</div>
+        <div class="location">at line         line 999</div>
         <code>                    <a href="../../../../google/iam/v1/Policy.html"><abbr title="google\iam\v1\Policy">Policy</abbr></a>
     <strong>getIamPolicy</strong>(string $resource, array $optionalArgs = array())
         </code>
@@ -1595,7 +1609,7 @@ try {
             </div>
                     <div class="method-item">
                     <h3 id="method_testIamPermissions">
-        <div class="location">at line         line 1045</div>
+        <div class="location">at line         line 1061</div>
         <code>                    <a href="../../../../google/iam/v1/TestIamPermissionsResponse.html"><abbr title="google\iam\v1\TestIamPermissionsResponse">TestIamPermissionsResponse</abbr></a>
     <strong>testIamPermissions</strong>(string $resource, string[] $permissions, array $optionalArgs = array())
         </code>
@@ -1605,7 +1619,10 @@ try {
     
 
                     <div class="method-description">
-                                    <p>Returns permissions that a caller has on the specified resource.</p>                    <p>Sample code:
+                                    <p>Returns permissions that a caller has on the specified resource.</p>                    <p>If the resource does not exist, this will return an empty set of
+permissions, not a NOT_FOUND error.</p>
+
+<p>Sample code:
 <pre><code>
 try {
     $subscriberClient = new SubscriberClient();
@@ -1682,7 +1699,7 @@ try {
             </div>
                     <div class="method-item">
                     <h3 id="method_close">
-        <div class="location">at line         line 1073</div>
+        <div class="location">at line         line 1089</div>
         <code>                    
     <strong>close</strong>()
         </code>
